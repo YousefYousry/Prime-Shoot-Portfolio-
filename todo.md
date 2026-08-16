@@ -1,5 +1,6 @@
-# Contact and Social Details Update
+# Final Logo and Creative Brands Archive
 
-- [ ] Add phone number 01026842033 as a clickable telephone link.
-- [ ] Add Instagram link https://www.instagram.com/prime.shoot1/ to the contact/social area.
-- [ ] Verify the links on desktop and mobile, run checks, and save a checkpoint.
+- [ ] Replace all visible Prime Shot branding with the final uploaded logo asset.
+- [ ] Redesign the brands section with varied card scales, color-aware surfaces, and a more editorial archive composition.
+- [ ] Preserve supplied logo artwork and improve contrast without recoloring the marks themselves.
+- [ ] Verify desktop/mobile layouts, run checks, and save a new checkpoint.

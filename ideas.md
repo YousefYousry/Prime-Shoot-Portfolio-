@@ -80,3 +80,9 @@ Keep the supplied geometric “P” symbol as the primary brand mark. Pair it wi
 - Prime Olive stays a signal color: strongest on indices, arrows, active states, stamps, and italic headline emphasis; broad olive fields are reserved for deliberate accents.
 - Informational sections use catalog cues—mono numbering, hairline rules, terse labels, and restrained copy—rather than conventional agency service cards.
 - The footer repeats the custom Prime Shot Creative lockup so the identity system is present at both entry and exit points.
+
+## Style Decisions — Current Revision
+
+- Use the supplied geometric P primarily as a compact Prime Olive archive stamp; reserve horizontal lockups for full identity moments only.
+- Treat client logos as archival artifacts using controlled off-white, black, olive, and muted print tones rather than pastel card colors.
+- Keep brands copy concise, concrete, and observational; avoid sales-led phrases and generic agency claims.

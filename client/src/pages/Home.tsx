@@ -62,7 +62,7 @@ export default function Home() {
     <main className="site-shell">
       <header className={`site-header ${menuOpen ? "menu-is-open" : ""}`}>
         <a className="brand-lockup" href="#top" onClick={closeMenu} aria-label="Prime Shot Creative home">
-          <span className="official-logo-frame"><img className="official-logo" src="/manus-storage/logo_c543b286.webp" alt="Prime Shot Creative" /></span>
+          <span className="official-logo-frame"><img className="official-logo" src="/manus-storage/prime-shot-final-logo_3a8d8d0f.webp" alt="Prime Shot Creative" /></span>
         </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
           <a href="#work">Work</a><a href="#services">Services</a><a href="#studio">Studio</a><a href="#contact">Contact</a>
@@ -105,11 +105,12 @@ export default function Home() {
       <section className="brands-section section-pad" aria-labelledby="brands-title">
         <div className="section-label"><span>02</span><span>Brands we’ve scaled</span></div>
         <div className="brands-head">
-          <h2 id="brands-title">Trusted by industry<br /><em>leaders to deliver.</em></h2>
-          <p>High-converting creative winners, built with a clear point of view and made to move brands forward.</p>
+          <h2 id="brands-title">A working archive<br /><em>of visual partners.</em></h2>
+          <p>A small record of brands, campaigns, and visual systems shaped with a clear point of view.</p>
         </div>
+        <div className="brands-manifesto"><span>Selected client archive</span><i /><span>Different voices. One visual standard.</span></div>
         <div className="brand-logo-grid">
-          {clientBrands.map((brand, index) => <div className="brand-logo-card" key={brand.src}><img src={brand.src} alt={brand.alt} loading="lazy" /><span>0{index + 1}</span></div>)}
+          {clientBrands.map((brand, index) => <div className={`brand-logo-card tone-${index + 1}`} key={brand.src}><div className="brand-card-inner"><img src={brand.src} alt={brand.alt} loading="lazy" /></div><span className="brand-card-index">0{index + 1}</span><span className="brand-card-caption">Client archive</span></div>)}
         </div>
       </section>
 
@@ -128,9 +129,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="statement-section"><div className="statement-logo-frame"><img className="statement-logo" src="/manus-storage/logo_c543b286.webp" alt="Prime Shot Creative" /></div><p>Good work begins with<br /><em>a point of view.</em></p><span className="statement-rule" /></section>
+      <section className="statement-section"><div className="statement-logo-frame"><img className="statement-logo" src="/manus-storage/prime-shot-final-logo_3a8d8d0f.webp" alt="Prime Shot Creative" /></div><p>Good work begins with<br /><em>a point of view.</em></p><span className="statement-rule" /></section>
 
-      <footer id="contact" className="site-footer section-pad"><div className="section-label"><span>05</span><span>Start a conversation</span></div><div className="footer-main"><h2>Have a project<br /><em>in mind?</em></h2><a className="footer-email" href="mailto:primeshoot1@gmail.com">primeshoot1@gmail.com <ArrowUpRight size={22} strokeWidth={1.2} /></a><a className="footer-phone" href="tel:01026842033">01026842033 <ArrowUpRight size={18} strokeWidth={1.2} /></a><a className="footer-instagram" href="https://www.instagram.com/prime.shoot1/" target="_blank" rel="noreferrer">Instagram / @prime.shoot1 <ArrowUpRight size={18} strokeWidth={1.2} /></a></div><div className="footer-identity"><span className="official-logo-frame"><img className="official-logo" src="/manus-storage/logo_c543b286.webp" alt="Prime Shot Creative" /></span></div><div className="footer-bottom"><span>© 2026 Prime Shot Creative</span><span>Alexandria / Cairo</span><a href="#top">Back to top ↑</a></div></footer>
+      <footer id="contact" className="site-footer section-pad"><div className="section-label"><span>05</span><span>Start a conversation</span></div><div className="footer-main"><h2>Have a project<br /><em>in mind?</em></h2><a className="footer-email" href="mailto:primeshoot1@gmail.com">primeshoot1@gmail.com <ArrowUpRight size={22} strokeWidth={1.2} /></a><a className="footer-phone" href="tel:01026842033">01026842033 <ArrowUpRight size={18} strokeWidth={1.2} /></a><a className="footer-instagram" href="https://www.instagram.com/prime.shoot1/" target="_blank" rel="noreferrer">Instagram / @prime.shoot1 <ArrowUpRight size={18} strokeWidth={1.2} /></a></div><div className="footer-identity"><span className="official-logo-frame"><img className="official-logo" src="/manus-storage/prime-shot-final-logo_3a8d8d0f.webp" alt="Prime Shot Creative" /></span></div><div className="footer-bottom"><span>© 2026 Prime Shot Creative</span><span>Alexandria / Cairo</span><a href="#top">Back to top ↑</a></div></footer>
     </main>
   );
 }
