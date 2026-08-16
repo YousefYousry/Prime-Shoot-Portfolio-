@@ -15,7 +15,7 @@ a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 .site-shell { overflow: hidden; background: #0a0a0a; }
 .site-header { align-items: center; display: flex; height: 84px; justify-content: space-between; left: 0; padding: 0 clamp(24px, 4vw, 64px); position: absolute; right: 0; top: 0; z-index: 20; }
-.brand-lockup { align-items: center; display: flex; gap: 12px; }
+.brand-lockup { align-items: center; display: flex; gap: 12px; } .official-logo-frame { display: block; height: 42px; width: 164px; } .official-logo { display: block; height: 100%; object-fit: contain; object-position: center; width: 100%; } .statement-logo-frame { align-items: center; border: 1px solid rgba(242,240,234,.35); display: flex; height: 70px; justify-content: center; margin-bottom: 35px; padding: 10px 13px; width: 205px; } .statement-logo { height: 100%; object-fit: contain; object-position: center; width: 100%; }
 .brand-mark { align-items: center; background: #3f4c2e; display: flex; height: 34px; justify-content: center; width: 34px; }
 .brand-mark img { height: 23px; object-fit: contain; width: 23px; filter: brightness(0) invert(1); }
 .brand-name { display: flex; flex-direction: column; font-size: 10px; letter-spacing: .13em; line-height: 1.1; }
@@ -101,7 +101,7 @@ h2 em { color: #9aa97b; font-style: italic; font-weight: 400; }
 .statement-section p { color: #f2f0ea; font-size: clamp(44px, 6vw, 84px); letter-spacing: -.08em; line-height: .92; margin: 0; text-transform: uppercase; }
 .statement-section em { color: #a8b77e; font-weight: 400; }
 .statement-rule { background: rgba(242,240,234,.5); height: 1px; margin-top: 65px; width: 90px; }
-.site-footer { background: #0a0a0a; min-height: 620px; } .footer-identity { align-items: center; display: flex; gap: 12px; margin-top: 108px; } .footer-identity .brand-mark { height: 42px; width: 42px; } .footer-identity .brand-mark img { height: 28px; width: 28px; } .footer-identity .brand-name { font-size: 11px; } .footer-identity .brand-name em { font-size: 8px; }
+.site-footer { background: #0a0a0a; min-height: 620px; } .footer-identity { align-items: center; display: flex; gap: 12px; margin-top: 108px; } .footer-identity .official-logo-frame { height: 54px; width: 215px; }
 .footer-main { align-items: end; display: flex; justify-content: space-between; margin-top: 115px; }
 .footer-email { font-size: 12px; margin-bottom: 9px; }
 .footer-bottom { border-top: 1px solid #292929; color: #76766f; display: flex; justify-content: space-between; margin-top: 78px; padding-top: 15px; }
