@@ -121,7 +121,7 @@ export default function Home() {
           <div className="footer-contact-rail" aria-label="Contact details">
             <a className="footer-email" href="mailto:primeshoot1@gmail.com"><span>Email</span>primeshoot1@gmail.com <ArrowUpRight size={18} strokeWidth={1.2} /></a>
             <a className="footer-phone" href="tel:01026842033"><span>Phone</span>01026842033 <ArrowUpRight size={16} strokeWidth={1.2} /></a>
-            <a className="footer-instagram" href="https://www.instagram.com/prime.shoot1/" target="_blank" rel="noreferrer"><span>Social</span>Instagram / @prime.shoot1 <ArrowUpRight size={16} strokeWidth={1.2} /></a>
+            <a className="footer-instagram" href="https://www.instagram.com/prime.shoot1/" target="_blank" rel="noreferrer"><span>Instagram</span>Prime Shoot <ArrowUpRight size={16} strokeWidth={1.2} /></a>
           </div>
         </div>
         <div className="footer-identity"><span className="official-logo-frame"><img className="official-logo" src="/manus-storage/prime-shot-final-logo_3a8d8d0f.webp" alt="Prime Shot Creative" /></span><span className="footer-identity-note">Visual stories / commercial photography / creative production</span></div>

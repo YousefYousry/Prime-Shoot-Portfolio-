@@ -60,3 +60,9 @@
 - [x] Restyle the contact section in the Olive Noir Editorial direction.
 - [x] Improve the editorial headline, contact rail, logo placement, and mobile spacing.
 - [x] Verify desktop/mobile layouts, run checks, and save a checkpoint.
+
+## Contact wording update
+
+- [x] Change the contact rail label from Social to Instagram.
+- [x] Change the displayed Instagram text to Prime Shoot.
+- [x] Verify the contact section, run checks, and save a checkpoint.
