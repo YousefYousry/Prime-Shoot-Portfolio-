@@ -14,3 +14,10 @@
 - [x] Remove “Client archive” from every brand logo card.
 - [x] Improve text alignment and responsive mobile behavior across the page.
 - [x] Verify desktop/mobile layouts, run checks, and save a checkpoint.
+
+## Gallery update
+
+- [x] Inspect and prepare the 17 uploaded gallery assets.
+- [x] Add a Selected Work title before the gallery.
+- [x] Assemble Model Shots, Designs with Models, and Social Media Designs sections.
+- [x] Verify the gallery on mobile and save a checkpoint.

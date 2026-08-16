@@ -1,24 +1,40 @@
 /* Style direction: Olive Noir Editorial — asymmetry, contact-sheet metadata, and restrained motion make the studio archive feel curated rather than templated. */
 import { ArrowDownRight, ArrowUpRight, Menu, X } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 
-type Project = {
+type GalleryGroup = {
   number: string;
   title: string;
-  category: string;
-  year: string;
-  image: string;
-  size: "wide" | "tall" | "standard";
+  note: string;
+  images: { src: string; alt: string }[];
 };
 
-const projects: Project[] = [
-  { number: "01", title: "Still / Citrus", category: "Campaigns", year: "2026", image: "/manus-storage/prime-shot-campaign_630f7eb8.jpg", size: "wide" },
-  { number: "02", title: "Form & Function", category: "Product", year: "2025", image: "/manus-storage/prime-shot-hero_ed9335a2.jpg", size: "tall" },
-  { number: "03", title: "Quiet Structure", category: "Fashion", year: "2025", image: "/manus-storage/prime-shot-fashion_e15bd8a9.jpg", size: "standard" },
-  { number: "04", title: "The Working Surface", category: "Graphic Design", year: "2024", image: "/manus-storage/prime-shot-design_e9b95ed4.jpg", size: "wide" },
+const galleryGroups: GalleryGroup[] = [
+  {
+    number: "01",
+    title: "Model Shots",
+    note: "Studio portraits / campaign frames / fashion studies",
+    images: [
+      ["20.2_d0db3c23.png", "Genoa model campaign frame"], ["19.2_09a376c6.png", "Genoa model campaign frame"], ["18.1_c9a9b3bd.png", "Genoa model campaign frame"], ["11.1_0fa9e0fa.png", "Genoa model campaign frame"], ["10.1_7ea1182e.png", "Genoa model campaign frame"], ["5.5_2267d3ec.png", "Genoa model campaign frame"], ["4.4_eef306f7.png", "Genoa model campaign frame"], ["3.3_2cecc222.png", "Genoa model campaign frame"], ["2.4_5a87b258.png", "Genoa model campaign frame"], ["8.1_1314e935.png", "Genoa model campaign frame"],
+    ].map(([file, alt]) => ({ src: `/manus-storage/${file}`, alt })),
+  },
+  {
+    number: "02",
+    title: "Designs with Models",
+    note: "Art direction / campaign compositions / visual systems",
+    images: [
+      ["Te2_6da67eb3.png", "Genoa graphic campaign composition"], ["Cover2_524bf341.jpeg", "Genoa group campaign composition"], ["7_2b17ca0a.png", "Weekend Club model campaign design"],
+    ].map(([file, alt]) => ({ src: `/manus-storage/${file}`, alt })),
+  },
+  {
+    number: "03",
+    title: "Social Media Designs",
+    note: "Content systems / promotional layouts / social-first creative",
+    images: [
+      ["2_52813dbb.png", "Weekend Club social media design"], ["5_49d6f880.png", "Heda social media design"], ["12_4468f818.png", "Weekend Club social media design"], ["3_10ed06d8.png", "Heda social media design"],
+    ].map(([file, alt]) => ({ src: `/manus-storage/${file}`, alt })),
+  },
 ];
-
-const filters = ["All", "Campaigns", "Photography", "Product", "Fashion", "Graphic Design"];
 
 const clientBrands = [
   { src: "/manus-storage/1681335201236_2e1429bf.png", alt: "Molton brand mark" },
@@ -30,33 +46,8 @@ const clientBrands = [
   { src: "/manus-storage/jilam-white-logo_6d4ad336.png", alt: "Jilam brand mark" },
 ];
 
-function ProjectTile({ project }: { project: Project }) {
-  return (
-    <article className={`project-tile ${project.size}`}>
-      <a href="#contact" className="project-image-wrap" aria-label={`View ${project.title} project`}>
-        <img src={project.image} alt={project.title} loading="lazy" />
-        <div className="project-shade" />
-        <div className="project-hover">
-          <span>View project</span>
-          <ArrowUpRight size={18} strokeWidth={1.4} />
-        </div>
-      </a>
-      <div className="project-meta">
-        <span className="project-index">{project.number}</span>
-        <div>
-          <h3>{project.title}</h3>
-          <p>{project.category} <span>/</span> {project.year}</p>
-        </div>
-      </div>
-    </article>
-  );
-}
-
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeFilter, setActiveFilter] = useState("All");
-  const visibleProjects = useMemo(() => activeFilter === "All" ? projects : projects.filter((project) => project.category === activeFilter || (activeFilter === "Photography" && project.category === "Fashion")), [activeFilter]);
-
   const closeMenu = () => setMenuOpen(false);
 
   return (
@@ -114,11 +105,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="work" className="work-section section-pad">
-        <div className="work-head"><div className="section-label"><span>03</span><span>Selected work</span></div><p className="work-note">A considered selection of campaigns,<br />objects, people, and process.</p></div>
-        <div className="filter-row" role="tablist" aria-label="Filter selected work">{filters.map((filter) => <button key={filter} className={activeFilter === filter ? "active" : ""} onClick={() => setActiveFilter(filter)} role="tab" aria-selected={activeFilter === filter}>{filter}</button>)}</div>
-        <div className="project-grid">{visibleProjects.map((project) => <ProjectTile key={project.number} project={project} />)}</div>
-        <div className="archive-row"><span>Showing {String(visibleProjects.length).padStart(2, "0")} projects</span><a href="#contact">View full archive <ArrowUpRight size={16} /></a></div>
+      <section id="work" className="work-section section-pad gallery-section" aria-labelledby="gallery-title">
+        <div className="section-label"><span>03</span><span>Selected work</span></div>
+        <div className="gallery-intro"><h2 id="gallery-title">Selected<br /><em>work.</em></h2><p>A considered selection of campaigns, models, compositions, and social-first design — assembled by discipline.</p></div>
+        <div className="gallery-groups">{galleryGroups.map((group) => <section className="gallery-group" key={group.number} aria-labelledby={`gallery-${group.number}`}><div className="gallery-group-head"><div><span className="gallery-group-index">{group.number}</span><h3 id={`gallery-${group.number}`}>{group.title}</h3></div><p>{group.note}</p></div><div className="gallery-grid">{group.images.map((image) => <a className="gallery-image" href={image.src} target="_blank" rel="noreferrer" key={image.src}><img src={image.src} alt={image.alt} loading="lazy" /></a>)}</div></section>)}</div>
       </section>
 
       <section id="services" className="services-section section-pad">
