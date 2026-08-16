@@ -42,3 +42,10 @@
 - [x] Remove all Alexandria / Cairo labels.
 - [x] Align each section header to the left on desktop and mobile.
 - [x] Verify responsive layouts, run checks, and save a checkpoint.
+
+## Model Shots update
+
+- [x] Prepare the supplied Heda model image for web use.
+- [x] Add the image to Model Shots.
+- [x] Randomize Model Shots order on each site load while preserving the featured tile.
+- [x] Verify responsive behavior, run checks, and save a checkpoint.
