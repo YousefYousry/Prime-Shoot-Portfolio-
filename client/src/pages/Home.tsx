@@ -62,7 +62,7 @@ export default function Home() {
     <main className="site-shell">
       <header className={`site-header ${menuOpen ? "menu-is-open" : ""}`}>
         <a className="brand-lockup" href="#top" onClick={closeMenu} aria-label="Prime Shot Creative home">
-          <span className="official-logo-frame"><img className="official-logo" src="/manus-storage/prime-shot-logo-transparent-no-creative_fe53382a.png" alt="Prime Shot Creative" /></span>
+          <span className="official-logo-frame"><img className="official-logo" src="/manus-storage/logo_c543b286.webp" alt="Prime Shot Creative" /></span>
         </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
           <a href="#work">Work</a><a href="#services">Services</a><a href="#studio">Studio</a><a href="#contact">Contact</a>
@@ -81,7 +81,7 @@ export default function Home() {
       </div>
 
       <section id="top" className="hero-section">
-        <div className="hero-image"><img src="/manus-storage/prime-shot-hero_ed9335a2.jpg" alt="Sculptural perfume bottle and folded fabric in a cinematic studio light" /></div>
+        <div className="hero-image"><img src="/manus-storage/prime-shot-camera-hero_363ce75c.jpg" alt="Professional camera on a sculptural studio surface in cinematic light" /></div>
         <div className="hero-overlay" />
         <div className="hero-content">
           <div className="hero-kicker"><span>Independent creative studio</span><span>EST. 2020 — EGYPT</span></div>
@@ -128,9 +128,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="statement-section"><div className="statement-logo-frame"><img className="statement-logo" src="/manus-storage/prime-shot-logo-transparent-no-creative_fe53382a.png" alt="Prime Shot Creative" /></div><p>Good work begins with<br /><em>a point of view.</em></p><span className="statement-rule" /></section>
+      <section className="statement-section"><div className="statement-logo-frame"><img className="statement-logo" src="/manus-storage/logo_c543b286.webp" alt="Prime Shot Creative" /></div><p>Good work begins with<br /><em>a point of view.</em></p><span className="statement-rule" /></section>
 
-      <footer id="contact" className="site-footer section-pad"><div className="section-label"><span>05</span><span>Start a conversation</span></div><div className="footer-main"><h2>Have a project<br /><em>in mind?</em></h2><a className="footer-email" href="mailto:primeshoot1@gmail.com">primeshoot1@gmail.com <ArrowUpRight size={22} strokeWidth={1.2} /></a></div><div className="footer-identity"><span className="official-logo-frame"><img className="official-logo" src="/manus-storage/prime-shot-logo-transparent-no-creative_fe53382a.png" alt="Prime Shot Creative" /></span></div><div className="footer-bottom"><span>© 2026 Prime Shot Creative</span><span>Alexandria / Cairo</span><a href="#top">Back to top ↑</a></div></footer>
+      <footer id="contact" className="site-footer section-pad"><div className="section-label"><span>05</span><span>Start a conversation</span></div><div className="footer-main"><h2>Have a project<br /><em>in mind?</em></h2><a className="footer-email" href="mailto:primeshoot1@gmail.com">primeshoot1@gmail.com <ArrowUpRight size={22} strokeWidth={1.2} /></a></div><div className="footer-identity"><span className="official-logo-frame"><img className="official-logo" src="/manus-storage/logo_c543b286.webp" alt="Prime Shot Creative" /></span></div><div className="footer-bottom"><span>© 2026 Prime Shot Creative</span><span>Alexandria / Cairo</span><a href="#top">Back to top ↑</a></div></footer>
     </main>
   );
 }
