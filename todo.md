@@ -21,3 +21,18 @@
 - [x] Add a Selected Work title before the gallery.
 - [x] Assemble Model Shots, Designs with Models, and Social Media Designs sections.
 - [x] Verify the gallery on mobile and save a checkpoint.
+
+## Gallery category refinement
+
+- [x] Merge Designs with Models into Model Shots.
+- [x] Move the specified Weekend Club group photo into Model Shots.
+- [x] Move the specified Genoa compositions into Social Media Designs.
+- [x] Verify the revised gallery on mobile and save a checkpoint.
+
+## Gallery category refinement
+
+- [x] Merge Designs with Models into Model Shots.
+- [x] Move the specified Weekend Club group photo into Model Shots.
+- [x] Move the specified Genoa compositions into Social Media Designs.
+- [x] Create a more creative editorial gallery arrangement.
+- [x] Verify the revised gallery on mobile and save a checkpoint.

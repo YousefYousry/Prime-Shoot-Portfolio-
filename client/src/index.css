@@ -155,3 +155,13 @@ h2 em { color: #9aa97b; font-style: italic; font-weight: 400; }
   .gallery-grid, .gallery-group:nth-child(2) .gallery-grid { gap: 8px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .gallery-image img, .gallery-group:nth-child(2) .gallery-image img { aspect-ratio: 4 / 5; }
 }
+
+/* Creative gallery rhythm: lead images create a visual entry point without breaking the portrait contact-sheet system. */
+.gallery-group:first-child .gallery-image:first-child { grid-column: span 2; grid-row: span 2; }
+.gallery-group:first-child .gallery-image:first-child img { aspect-ratio: 8 / 10; }
+.gallery-group:nth-child(2) .gallery-image:first-child { grid-column: span 2; }
+.gallery-group:nth-child(2) .gallery-image:first-child img { aspect-ratio: 8 / 5; }
+@media (max-width: 760px) {
+  .gallery-group:first-child .gallery-image:first-child, .gallery-group:nth-child(2) .gallery-image:first-child { grid-column: span 2; grid-row: auto; }
+  .gallery-group:first-child .gallery-image:first-child img, .gallery-group:nth-child(2) .gallery-image:first-child img { aspect-ratio: 4 / 5; }
+}
