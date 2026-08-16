@@ -1,6 +1,5 @@
-# Final Logo and Creative Brands Archive
+# About Copy and Brands Archive Refinement
 
-- [ ] Replace all visible Prime Shot branding with the final uploaded logo asset.
-- [ ] Redesign the brands section with varied card scales, color-aware surfaces, and a more editorial archive composition.
-- [ ] Preserve supplied logo artwork and improve contrast without recoloring the marks themselves.
-- [ ] Verify desktop/mobile layouts, run checks, and save a new checkpoint.
+- [ ] Add the supplied Prime positioning copy to the About/Studio section exactly as provided.
+- [ ] Refine the brands archive composition so all supplied logos and their colors feel intentionally curated.
+- [ ] Verify About and brands sections on desktop/mobile, run checks, and save a new checkpoint.

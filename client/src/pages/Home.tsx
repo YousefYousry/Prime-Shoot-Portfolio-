@@ -97,8 +97,8 @@ export default function Home() {
       <section id="studio" className="intro-section section-pad">
         <div className="section-label"><span>01</span><span>Who we are</span></div>
         <div className="intro-grid">
-          <h2>We create visual<br /><em>stories for brands.</em></h2>
-          <div className="intro-copy"><p>We frame, produce, and finish visual systems with intent — from the first reference image to the final campaign crop. Built for brands that know the difference a point of view makes.</p><a className="text-link" href="#contact">More about the studio <ArrowUpRight size={16} /></a></div>
+          <h2>Prime is a creative<br /><em>production studio.</em></h2>
+          <div className="intro-copy"><p>Prime is a creative production studio for brands that want more from their content.</p><p>We combine <strong>product photography, creative design, and marketing</strong> to turn brand ideas into sharp, distinctive visual content — from the first concept to the final campaign.</p><p className="intro-signoff"><strong>We create to win.</strong></p><a className="text-link" href="#contact">Start a project <ArrowUpRight size={16} /></a></div>
         </div>
       </section>
 
@@ -106,9 +106,9 @@ export default function Home() {
         <div className="section-label"><span>02</span><span>Brands we’ve scaled</span></div>
         <div className="brands-head">
           <h2 id="brands-title">A working archive<br /><em>of visual partners.</em></h2>
-          <p>A small record of brands, campaigns, and visual systems shaped with a clear point of view.</p>
+          <p>A visual ledger of bold color, clear contrast, and campaign thinking — each mark held in its own frame.</p>
         </div>
-        <div className="brands-manifesto"><span>Selected client archive</span><i /><span>Different voices. One visual standard.</span></div>
+        <div className="brands-manifesto"><span>Selected client archive</span><i /><span>Color / contrast / recall</span></div>
         <div className="brand-logo-grid">
           {clientBrands.map((brand, index) => <div className={`brand-logo-card tone-${index + 1}`} key={brand.src}><div className="brand-card-inner"><img src={brand.src} alt={brand.alt} loading="lazy" /></div><span className="brand-card-index">0{index + 1}</span><span className="brand-card-caption">Client archive</span></div>)}
         </div>

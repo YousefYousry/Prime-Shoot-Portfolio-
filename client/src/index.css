@@ -55,7 +55,7 @@ button { font: inherit; }
 h2 { font-size: clamp(45px, 7vw, 104px); font-weight: 500; letter-spacing: -.08em; line-height: .91; margin: 0; text-transform: uppercase; }
 h2 em { color: #9aa97b; font-style: italic; font-weight: 400; }
 .intro-copy { align-self: end; max-width: 330px; }
-.intro-copy p { color: #b8b6ae; font-size: 15px; line-height: 1.65; margin: 0 0 38px; }
+.intro-copy p { color: #b8b6ae; font-size: 15px; line-height: 1.65; margin: 0 0 30px; } .intro-copy strong { color: #f2f0ea; font-weight: 500; } .intro-copy .intro-signoff { color: #a8b77e; font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: .12em; margin-top: 34px; text-transform: uppercase; }
 .text-link, .footer-email, .footer-phone, .footer-instagram { align-items: center; border-bottom: 1px solid #3f4c2e; color: #dcd9d0; display: inline-flex; font-family: 'DM Mono', monospace; font-size: 10px; gap: 12px; letter-spacing: .1em; padding-bottom: 11px; text-transform: uppercase; }
 .work-section { background: #10100f; }
 .work-head { display: flex; justify-content: space-between; }
@@ -121,7 +121,7 @@ h2 em { color: #9aa97b; font-style: italic; font-weight: 400; }
 .brand-logo-grid { align-items: start; display: grid; gap: 12px; grid-template-columns: repeat(12, minmax(0, 1fr)); margin-top: 26px; }
 .brand-logo-card { align-items: center; border: 1px solid rgba(17,18,15,.14); display: flex; height: 184px; justify-content: center; overflow: hidden; padding: 24px; position: relative; transition: transform .3s cubic-bezier(.23,1,.32,1), box-shadow .3s ease; }
 .brand-logo-card:nth-child(1) { grid-column: span 3; } .brand-logo-card:nth-child(2) { grid-column: span 3; margin-top: 34px; } .brand-logo-card:nth-child(3) { grid-column: span 2; height: 220px; } .brand-logo-card:nth-child(4) { grid-column: span 2; margin-top: 34px; } .brand-logo-card:nth-child(5) { grid-column: span 2; height: 220px; } .brand-logo-card:nth-child(6) { grid-column: span 2; margin-top: 34px; }
-.brand-logo-card:hover { box-shadow: 0 18px 30px rgba(17,18,15,.14); transform: translateY(-7px) rotate(-1deg); }
+.brand-logo-card::before { background: #3f4c2e; content: ''; height: 4px; left: 0; position: absolute; right: 0; top: 0; } .brand-logo-card.tone-2::before { background: #d6b86a; } .brand-logo-card.tone-3::before { background: #f2f0ea; } .brand-logo-card.tone-4::before { background: #27333a; } .brand-logo-card.tone-5::before { background: #6a2d3c; } .brand-logo-card.tone-6::before { background: #d4a545; } .brand-logo-card:hover { box-shadow: 0 18px 30px rgba(17,18,15,.14); transform: translateY(-7px) rotate(-1deg); }
 .brand-card-inner { align-items: center; background: rgba(255,255,255,.72); display: flex; height: 100%; justify-content: center; padding: 18px; width: 100%; }
 .brand-logo-card img { display: block; max-height: 100%; max-width: 100%; object-fit: contain; width: 100%; }
 .brand-logo-card.tone-1 { background: #dedbd1; } .brand-logo-card.tone-2 { background: #171916; } .brand-logo-card.tone-3 { background: #3f4c2e; } .brand-logo-card.tone-4 { background: #b9b2a5; } .brand-logo-card.tone-5 { background: #8f8b7e; } .brand-logo-card.tone-6 { background: #252b2d; } .brand-logo-card.tone-2 .brand-card-inner, .brand-logo-card.tone-3 .brand-card-inner, .brand-logo-card.tone-5 .brand-card-inner, .brand-logo-card.tone-6 .brand-card-inner { background: rgba(247,244,235,.88); }
