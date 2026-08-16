@@ -36,3 +36,9 @@
 - [x] Move the specified Genoa compositions into Social Media Designs.
 - [x] Create a more creative editorial gallery arrangement.
 - [x] Verify the revised gallery on mobile and save a checkpoint.
+
+## Header alignment refinement
+
+- [x] Remove all Alexandria / Cairo labels.
+- [x] Align each section header to the left on desktop and mobile.
+- [x] Verify responsive layouts, run checks, and save a checkpoint.

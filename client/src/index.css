@@ -165,3 +165,10 @@ h2 em { color: #9aa97b; font-style: italic; font-weight: 400; }
   .gallery-group:first-child .gallery-image:first-child, .gallery-group:nth-child(2) .gallery-image:first-child { grid-column: span 2; grid-row: auto; }
   .gallery-group:first-child .gallery-image:first-child img, .gallery-group:nth-child(2) .gallery-image:first-child img { aspect-ratio: 4 / 5; }
 }
+
+/* Header alignment refinement: every section label and title begins from the same left edge. */
+.section-label { justify-content: flex-start; text-align: left; }
+.section-label span { text-align: left; }
+.services-section .section-label::after { margin-left: 20px; }
+.brands-head, .gallery-intro, .services-grid, .gallery-group-head { text-align: left; }
+.gallery-group-head p { text-align: left; }
