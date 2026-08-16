@@ -49,3 +49,8 @@
 - [x] Add the image to Model Shots.
 - [x] Randomize Model Shots order on each site load while preserving the featured tile.
 - [x] Verify responsive behavior, run checks, and save a checkpoint.
+
+## Social Media Designs update
+
+- [x] Randomize Social Media Designs on each site load.
+- [x] Verify both randomized gallery sections responsively, run checks, and save a checkpoint.

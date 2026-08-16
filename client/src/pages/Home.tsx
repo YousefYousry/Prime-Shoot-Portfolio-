@@ -40,7 +40,7 @@ const clientBrands = [
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const randomizedGalleryGroups = useMemo(() => galleryGroups.map((group, index) => index === 0 ? { ...group, images: [...group.images].sort(() => Math.random() - 0.5) } : group), []);
+  const randomizedGalleryGroups = useMemo(() => galleryGroups.map((group, index) => index < 2 ? { ...group, images: [...group.images].sort(() => Math.random() - 0.5) } : group), []);
   const closeMenu = () => setMenuOpen(false);
 
   return (
