@@ -1,5 +1,5 @@
-# Official Logo Replacement
+# Website Logo Application
 
-- [ ] Prepare the supplied Prime Shot Creative logo for web use while preserving its design.
-- [ ] Replace generated mark references in the header, mobile/footer identity, and favicon.
-- [ ] Verify desktop and mobile presentation, then save a new checkpoint.
+- [ ] Replace the header, statement section, footer, and favicon with the new transparent PRIME SHOT-only logo.
+- [ ] Verify desktop and mobile presentation and run frontend checks.
+- [ ] Save and deliver the updated website version.
