@@ -1,5 +1,5 @@
-# Camera Hero and Uploaded Logo Update
+# Contact and Social Details Update
 
-- [ ] Prepare the newly uploaded logo asset for use in the header, statement, footer, and favicon.
-- [ ] Generate a camera-focused hero image with the current dark editorial composition and text-safe space.
-- [ ] Replace the hero and logo references, then verify desktop/mobile layouts and save a checkpoint.
+- [ ] Add phone number 01026842033 as a clickable telephone link.
+- [ ] Add Instagram link https://www.instagram.com/prime.shoot1/ to the contact/social area.
+- [ ] Verify the links on desktop and mobile, run checks, and save a checkpoint.
