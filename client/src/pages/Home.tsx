@@ -27,6 +27,7 @@ const clientBrands = [
   { src: "/manus-storage/genoaa_891a5f39.png", alt: "Genoa brand mark" },
   { src: "/manus-storage/logo_3659e417.png", alt: "Client brand mark" },
   { src: "/manus-storage/Asset3@4xlogoo_c099737e.png", alt: "Client brand mark" },
+  { src: "/manus-storage/jilam-white-logo_6d4ad336.png", alt: "Jilam brand mark" },
 ];
 
 function ProjectTile({ project }: { project: Project }) {
@@ -105,10 +106,10 @@ export default function Home() {
       <section className="brands-section section-pad" aria-labelledby="brands-title">
         <div className="section-label"><span>02</span><span>Brands we’ve scaled</span></div>
         <div className="brands-head">
-          <h2 id="brands-title">A working archive<br /><em>of visual partners.</em></h2>
-          <p>A visual ledger of bold color, clear contrast, and campaign thinking — each mark held in its own frame.</p>
+          <h2 id="brands-title">Brands we’ve<br /><em>worked with.</em></h2>
+          <p>A considered list of brands that trusted Prime to make their work sharper, clearer, and more memorable.</p>
         </div>
-        <div className="brands-manifesto"><span>Selected client archive</span><i /><span>Color / contrast / recall</span></div>
+        <div className="brands-manifesto"><span>Selected client archive</span><i /><span>Built with intention</span></div>
         <div className="brand-logo-grid">
           {clientBrands.map((brand, index) => <div className={`brand-logo-card tone-${index + 1}`} key={brand.src}><div className="brand-card-inner"><img src={brand.src} alt={brand.alt} loading="lazy" /></div><span className="brand-card-index">0{index + 1}</span><span className="brand-card-caption">Client archive</span></div>)}
         </div>
