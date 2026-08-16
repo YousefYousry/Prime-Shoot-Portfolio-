@@ -54,3 +54,9 @@
 
 - [x] Randomize Social Media Designs on each site load.
 - [x] Verify both randomized gallery sections responsively, run checks, and save a checkpoint.
+
+## Contact section restyle
+
+- [x] Restyle the contact section in the Olive Noir Editorial direction.
+- [x] Improve the editorial headline, contact rail, logo placement, and mobile spacing.
+- [x] Verify desktop/mobile layouts, run checks, and save a checkpoint.

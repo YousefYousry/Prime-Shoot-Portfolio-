@@ -114,7 +114,19 @@ export default function Home() {
 
       <section className="statement-section"><div className="statement-logo-frame"><img className="statement-logo" src="/manus-storage/prime-shot-final-logo_3a8d8d0f.webp" alt="Prime Shot Creative" /></div><p>Good work begins with<br /><em>a point of view.</em></p><span className="statement-rule" /></section>
 
-      <footer id="contact" className="site-footer section-pad"><div className="section-label"><span>05</span><span>Start a conversation</span></div><div className="footer-main"><h2>Have a project<br /><em>in mind?</em></h2><a className="footer-email" href="mailto:primeshoot1@gmail.com">primeshoot1@gmail.com <ArrowUpRight size={22} strokeWidth={1.2} /></a><a className="footer-phone" href="tel:01026842033">01026842033 <ArrowUpRight size={18} strokeWidth={1.2} /></a><a className="footer-instagram" href="https://www.instagram.com/prime.shoot1/" target="_blank" rel="noreferrer">Instagram / @prime.shoot1 <ArrowUpRight size={18} strokeWidth={1.2} /></a></div><div className="footer-identity"><span className="official-logo-frame"><img className="official-logo" src="/manus-storage/prime-shot-final-logo_3a8d8d0f.webp" alt="Prime Shot Creative" /></span></div><div className="footer-bottom"><span>© 2026 Prime Shot Creative</span><a href="#top">Back to top ↑</a></div></footer>
+      <footer id="contact" className="site-footer section-pad">
+        <div className="section-label"><span>05</span><span>Start a conversation</span></div>
+        <div className="footer-main">
+          <div className="footer-heading"><span className="footer-kicker">Prime Shot Creative / Contact</span><h2>Have a project<br /><em>in mind?</em></h2></div>
+          <div className="footer-contact-rail" aria-label="Contact details">
+            <a className="footer-email" href="mailto:primeshoot1@gmail.com"><span>Email</span>primeshoot1@gmail.com <ArrowUpRight size={18} strokeWidth={1.2} /></a>
+            <a className="footer-phone" href="tel:01026842033"><span>Phone</span>01026842033 <ArrowUpRight size={16} strokeWidth={1.2} /></a>
+            <a className="footer-instagram" href="https://www.instagram.com/prime.shoot1/" target="_blank" rel="noreferrer"><span>Social</span>Instagram / @prime.shoot1 <ArrowUpRight size={16} strokeWidth={1.2} /></a>
+          </div>
+        </div>
+        <div className="footer-identity"><span className="official-logo-frame"><img className="official-logo" src="/manus-storage/prime-shot-final-logo_3a8d8d0f.webp" alt="Prime Shot Creative" /></span><span className="footer-identity-note">Visual stories / commercial photography / creative production</span></div>
+        <div className="footer-bottom"><span>© 2026 Prime Shot Creative</span><span>Available for selected projects</span><a href="#top">Back to top ↑</a></div>
+      </footer>
     </main>
   );
 }
