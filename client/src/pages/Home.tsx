@@ -85,7 +85,6 @@ export default function Home() {
         <div className="hero-image"><img src="/manus-storage/prime-shot-camera-hero_363ce75c.jpg" alt="Professional camera on a sculptural studio surface in cinematic light" /></div>
         <div className="hero-overlay" />
         <div className="hero-content">
-          <div className="hero-kicker"><span>Independent creative studio</span><span>EST. 2020 — EGYPT</span></div>
           <h1><span>Prime Shot</span><span>Creative</span></h1>
           <div className="hero-bottom">
             <p>Visual stories, commercial photography<br />and creative production for brands.</p>
@@ -111,7 +110,7 @@ export default function Home() {
         </div>
         <div className="brands-manifesto"><span>Selected client archive</span><i /><span>Built with intention</span></div>
         <div className="brand-logo-grid">
-          {clientBrands.map((brand, index) => <div className={`brand-logo-card tone-${index + 1}`} key={brand.src}><div className="brand-card-inner"><img src={brand.src} alt={brand.alt} loading="lazy" /></div><span className="brand-card-index">0{index + 1}</span><span className="brand-card-caption">Client archive</span></div>)}
+          {clientBrands.map((brand, index) => <div className={`brand-logo-card tone-${index + 1}`} key={brand.src}><div className="brand-card-inner"><img src={brand.src} alt={brand.alt} loading="lazy" /></div><span className="brand-card-index">0{index + 1}</span></div>)}
         </div>
       </section>
 
