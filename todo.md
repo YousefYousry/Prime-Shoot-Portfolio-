@@ -1,5 +1,6 @@
-# Website Logo Application
+# Brands and Business Contact Update
 
-- [ ] Replace the header, statement section, footer, and favicon with the new transparent PRIME SHOT-only logo.
-- [ ] Verify desktop and mobile presentation and run frontend checks.
-- [ ] Save and deliver the updated website version.
+- [ ] Use the six uploaded client logos in a branded “Brands we’ve scaled” section.
+- [ ] Add the provided supporting copy about trusted, high-converting creative winners.
+- [ ] Replace all contact links and visible email copy with primeshoot1@gmail.com.
+- [ ] Verify responsive layout, run checks, and save the updated website checkpoint.

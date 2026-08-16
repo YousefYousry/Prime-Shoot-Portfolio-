@@ -20,6 +20,15 @@ const projects: Project[] = [
 
 const filters = ["All", "Campaigns", "Photography", "Product", "Fashion", "Graphic Design"];
 
+const clientBrands = [
+  { src: "/manus-storage/1681335201236_2e1429bf.png", alt: "Molton brand mark" },
+  { src: "/manus-storage/Corona-Mono-Light_Logo_4935a4c9.png", alt: "Corona brand mark" },
+  { src: "/manus-storage/crown_98b0e961.png", alt: "Crown brand mark" },
+  { src: "/manus-storage/genoaa_891a5f39.png", alt: "Genoa brand mark" },
+  { src: "/manus-storage/logo_3659e417.png", alt: "Client brand mark" },
+  { src: "/manus-storage/Asset3@4xlogoo_c099737e.png", alt: "Client brand mark" },
+];
+
 function ProjectTile({ project }: { project: Project }) {
   return (
     <article className={`project-tile ${project.size}`}>
@@ -93,15 +102,26 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="brands-section section-pad" aria-labelledby="brands-title">
+        <div className="section-label"><span>02</span><span>Brands we’ve scaled</span></div>
+        <div className="brands-head">
+          <h2 id="brands-title">Trusted by industry<br /><em>leaders to deliver.</em></h2>
+          <p>High-converting creative winners, built with a clear point of view and made to move brands forward.</p>
+        </div>
+        <div className="brand-logo-grid">
+          {clientBrands.map((brand, index) => <div className="brand-logo-card" key={brand.src}><img src={brand.src} alt={brand.alt} loading="lazy" /><span>0{index + 1}</span></div>)}
+        </div>
+      </section>
+
       <section id="work" className="work-section section-pad">
-        <div className="work-head"><div className="section-label"><span>02</span><span>Selected work</span></div><p className="work-note">A considered selection of campaigns,<br />objects, people, and process.</p></div>
+        <div className="work-head"><div className="section-label"><span>03</span><span>Selected work</span></div><p className="work-note">A considered selection of campaigns,<br />objects, people, and process.</p></div>
         <div className="filter-row" role="tablist" aria-label="Filter selected work">{filters.map((filter) => <button key={filter} className={activeFilter === filter ? "active" : ""} onClick={() => setActiveFilter(filter)} role="tab" aria-selected={activeFilter === filter}>{filter}</button>)}</div>
         <div className="project-grid">{visibleProjects.map((project) => <ProjectTile key={project.number} project={project} />)}</div>
         <div className="archive-row"><span>Showing {String(visibleProjects.length).padStart(2, "0")} projects</span><a href="#contact">View full archive <ArrowUpRight size={16} /></a></div>
       </section>
 
       <section id="services" className="services-section section-pad">
-        <div className="section-label"><span>03</span><span>What we do</span></div>
+        <div className="section-label"><span>04</span><span>What we do</span></div>
         <div className="services-grid">
           <h2>From first<br /><em>frame to final form.</em></h2>
           <div className="service-list"><div><span>01</span><strong>Photography</strong><p>Campaigns / Products / Editorial / Portraits</p></div><div><span>02</span><strong>Creative Production</strong><p>Direction / Set design / Motion / Post-production</p></div><div><span>03</span><strong>Graphic Design</strong><p>Brand worlds / Art direction / Campaign systems</p></div></div>
@@ -110,7 +130,7 @@ export default function Home() {
 
       <section className="statement-section"><div className="statement-logo-frame"><img className="statement-logo" src="/manus-storage/prime-shot-logo-transparent-no-creative_fe53382a.png" alt="Prime Shot Creative" /></div><p>Good work begins with<br /><em>a point of view.</em></p><span className="statement-rule" /></section>
 
-      <footer id="contact" className="site-footer section-pad"><div className="section-label"><span>04</span><span>Start a conversation</span></div><div className="footer-main"><h2>Have a project<br /><em>in mind?</em></h2><a className="footer-email" href="mailto:hello@primeshotcreative.com">hello@primeshotcreative.com <ArrowUpRight size={22} strokeWidth={1.2} /></a></div><div className="footer-identity"><span className="official-logo-frame"><img className="official-logo" src="/manus-storage/prime-shot-logo-transparent-no-creative_fe53382a.png" alt="Prime Shot Creative" /></span></div><div className="footer-bottom"><span>© 2026 Prime Shot Creative</span><span>Alexandria / Cairo</span><a href="#top">Back to top ↑</a></div></footer>
+      <footer id="contact" className="site-footer section-pad"><div className="section-label"><span>05</span><span>Start a conversation</span></div><div className="footer-main"><h2>Have a project<br /><em>in mind?</em></h2><a className="footer-email" href="mailto:primeshoot1@gmail.com">primeshoot1@gmail.com <ArrowUpRight size={22} strokeWidth={1.2} /></a></div><div className="footer-identity"><span className="official-logo-frame"><img className="official-logo" src="/manus-storage/prime-shot-logo-transparent-no-creative_fe53382a.png" alt="Prime Shot Creative" /></span></div><div className="footer-bottom"><span>© 2026 Prime Shot Creative</span><span>Alexandria / Cairo</span><a href="#top">Back to top ↑</a></div></footer>
     </main>
   );
 }
