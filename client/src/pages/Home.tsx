@@ -69,7 +69,7 @@ export default function Home() {
         <div className="hero-image"><img src="/assets/brand/prime-shot-camera-hero.jpg" alt="Professional camera on a sculptural studio surface in cinematic light" /></div>
         <div className="hero-overlay" />
         <div className="hero-content">
-          <h1><span>Prime Shot</span><span>Creative</span></h1>
+          <h1><span>Prime</span><span>Shot</span><span>Creative</span></h1>
           <div className="hero-bottom">
             <p>Visual stories, commercial photography<br />and creative production for brands.</p>
             <a className="circle-link" href="#work" aria-label="Explore selected work"><ArrowDownRight size={23} strokeWidth={1.2} /></a>
