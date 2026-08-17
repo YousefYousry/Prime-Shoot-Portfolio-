@@ -66,3 +66,44 @@
 - [x] Change the contact rail label from Social to Instagram.
 - [x] Change the displayed Instagram text to Prime Shoot.
 - [x] Verify the contact section, run checks, and save a checkpoint.
+
+## Platform badge review
+
+- [ ] Inspect whether Made with Manus is project-owned or platform-injected.
+- [ ] Remove it from the project if it is project-owned, or document the platform limitation.
+- [ ] Verify the published/preview result and report the outcome.
+
+## GitHub export
+
+- [ ] Inspect the repository state and GitHub export options.
+- [ ] Prepare the project for GitHub with correct build and asset references.
+- [ ] Complete or explain the GitHub export flow and verify the repository-ready result.
+
+## Public GitHub export
+
+- [ ] Export to https://github.com/YousefYousry/Prime-Shoot-Portfolio- as a public repository.
+- [ ] Verify the exported repository and build instructions.
+
+## Code ZIP export
+
+- [x] Prepare a clean code archive without temporary build artifacts.
+- [x] Create and verify the ZIP contents.
+- [x] Deliver the downloadable ZIP archive.
+
+## GitHub upload
+
+- [ ] Confirm the public repository destination and prepare the source.
+- [ ] Authenticate and upload the project files to GitHub.
+- [ ] Verify the public repository contents and report the URL.
+
+## Direct GitHub source upload
+
+- [x] Prepare the direct source-file upload set without ZIP, dependencies, build output, or temporary files.
+- [x] Upload the project files directly to the public GitHub repository root.
+- [x] Verify the repository file tree and report the public GitHub URL.
+
+## Vercel deployment fix
+
+- [ ] Inspect the repository build scripts and the exact Vercel deployment error.
+- [x] Configure the project for Vercel as a static Vite frontend instead of a persistent Express server.
+- [x] Verify the configuration and provide redeploy steps.
