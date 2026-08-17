@@ -29,13 +29,13 @@ const galleryGroups: GalleryGroup[] = [
 ];
 
 const clientBrands = [
-  { src: "/assets/brands/1681335201236.png", alt: "Molton brand mark" },
-  { src: "/assets/brands/Corona-Mono-Light_Logo.png", alt: "Corona brand mark" },
-  { src: "/assets/brands/crown.png", alt: "Crown brand mark" },
-  { src: "/assets/brands/genoaa.png", alt: "Genoa brand mark" },
-  { src: "/assets/brands/logo.png", alt: "Client brand mark" },
-  { src: "/assets/brands/Asset3@4xlogoo.png", alt: "Client brand mark" },
-  { src: "/assets/brands/jilam-white-logo.png", alt: "Jilam brand mark" },
+  { src: "/assets/brand/1681335201236.png", alt: "Molton brand mark" },
+  { src: "/assets/brand/Corona-Mono-Light_Logo.png", alt: "Corona brand mark" },
+  { src: "/assets/brand/crown.png", alt: "Crown brand mark" },
+  { src: "/assets/brand/genoaa.png", alt: "Genoa brand mark" },
+  { src: "/assets/brand/logo.png", alt: "Client brand mark" },
+  { src: "/assets/brand/Asset3@4xlogoo.png", alt: "Client brand mark" },
+  { src: "/assets/brand/jilam-white-logo.png", alt: "Jilam brand mark" },
 ];
 
 export default function Home() {
