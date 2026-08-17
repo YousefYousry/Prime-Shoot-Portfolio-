@@ -29,13 +29,13 @@ const galleryGroups: GalleryGroup[] = [
 ];
 
 const clientBrands = [
-  { src: "/assets/brand/1681335201236.png", alt: "Molton brand mark" },
-  { src: "/assets/brand/Corona-Mono-Light_Logo.png", alt: "Corona brand mark" },
-  { src: "/assets/brand/crown.png", alt: "Crown brand mark" },
-  { src: "/assets/brand/genoaa.png", alt: "Genoa brand mark" },
-  { src: "/assets/brand/logo.png", alt: "Client brand mark" },
-  { src: "/assets/brand/Asset3@4xlogoo.png", alt: "Client brand mark" },
-  { src: "/assets/brand/jilam-white-logo.png", alt: "Jilam brand mark" },
+  { src: "/assets/brand/1681335201236.png?v=prime-shot-studio", alt: "Molton brand mark" },
+  { src: "/assets/brand/Corona-Mono-Light_Logo.png?v=prime-shot-studio", alt: "Corona brand mark" },
+  { src: "/assets/brand/crown.png?v=prime-shot-studio", alt: "Crown brand mark" },
+  { src: "/assets/brand/genoaa.png?v=prime-shot-studio", alt: "Genoa brand mark" },
+  { src: "/assets/brand/logo.png?v=prime-shot-studio", alt: "Client brand mark" },
+  { src: "/assets/brand/Asset3@4xlogoo.png?v=prime-shot-studio", alt: "Client brand mark" },
+  { src: "/assets/brand/jilam-white-logo.png?v=prime-shot-studio", alt: "Jilam brand mark" },
 ];
 
 export default function Home() {
