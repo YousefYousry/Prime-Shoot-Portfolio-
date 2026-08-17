@@ -1,0 +1,34 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [],
+  "dev_command": "pnpm run dev",
+  "env_vars": {},
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "https://7f0548f6b28a1758d9bf7be630d36cb4.artifacts.cloudflare.net/git/prod/jo8rGoJZKwfnoRijKydS64.git",
+    "expiration": "2026-08-17T20:15:51.117Z",
+    "token": "art_v2_x_50839c0b9b1b4c1595f091ba3cc0c9948882799c?expires=1786997751",
+    "backend": "GIT_BACKEND_ARTIFACTS"
+  },
+  "name": "prime-shot-creative-portfolio-v2",
+  "path": "/home/ubuntu/prime-shot-creative-portfolio-v2",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "nuUgvnWdYDJ7XTGPqk85RM",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "2Jvn4E5KZiEmXz46nHidaZ",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "Youssef Youssry",
+    "OWNER_OPEN_ID": "nwX6UG7zX6e4BBn8u2uMED",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "b07824ef-4ee6-4d1a-b164-399bdb6ca20f",
+    "VITE_APP_ID": "jo8rGoJZKwfnoRijKydS64",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "Prime Shot Creative — Premium Studio Portfolio",
+    "VITE_FRONTEND_FORGE_API_KEY": "85E6KsGMgFGAnRFVfDzHLi",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}
