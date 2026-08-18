@@ -465,3 +465,8 @@
 - [x] Review brand logo and gallery item markup for reusable staggered reveal hooks.
 - [x] Add a scroll-triggered pop-up animation with staggered timing and reduced-motion support.
 - [x] Verify brand and gallery animations on desktop and mobile, then publish the update.
+
+## Final GitHub animation synchronization
+
+- [x] Check whether the latest animation update has already reached `main`.
+- [x] Push any remaining local changes and verify the latest remote commit.
