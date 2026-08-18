@@ -480,4 +480,4 @@
 ## Spotlight rollback
 
 - [x] Remove the recently added spotlight wrapper from brand logo and gallery cards.
-- [ ] Verify the approved animation system remains intact, then synchronize the rollback to GitHub/Vercel.
+- [x] Verify the approved animation system remains intact, then synchronize the rollback to GitHub/Vercel.
