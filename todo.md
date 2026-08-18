@@ -436,3 +436,5 @@
 - [x] Validate the optimized production build and desktop/mobile rendering. Publish the optimized static image set and application code to GitHub/Vercel.
 
 > The resulting Vercel payload is 4.2 MB, down from the 42 MB source-media footprint. The initial JavaScript bundle is now 488.79 kB (139.90 kB gzip), and the Gallery route is a separate 8.38 kB (1.47 kB gzip) chunk.
+
+> Optimizations are committed to GitHub as `024a52e` and Vercel reports that commit as ready in production. The active domain is `prime-shot.vercel.app` (the older `prime-shoot-portfolio.vercel.app` alias is no longer deployed). The production JavaScript bundle references the optimized WebP hero and does not reference its legacy JPEG source. Browser verification confirms the hero, studio logo, and all three category covers render successfully from the public WebP paths.
