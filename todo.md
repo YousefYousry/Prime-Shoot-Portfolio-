@@ -373,7 +373,7 @@
 - [x] Supersede the client-specific campaign-collage direction with a general category-cover concept.
 - [x] Retain a cover-only treatment on the Social Media Designs card in the Home gallery section.
 - [x] Verify the revised cover, run checks, and build the production bundle.
-- [ ] Push the completed project updates to the Prime-Shot-Studio GitHub repository.
+- [x] Push the completed project updates to the Prime-Shot-Studio GitHub repository.
 
 ## Revised Social Media Designs cover direction
 
@@ -388,4 +388,4 @@
 
 ## GitHub push request
 
-- [ ] Confirm the active GitHub connection, commit the completed portfolio updates, and push them to Prime-Shot-Studio.
+- [x] Confirm the active GitHub connection, commit the completed portfolio updates, and push them to Prime-Shot-Studio.
