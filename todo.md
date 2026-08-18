@@ -418,4 +418,12 @@
 
 - [x] Inspect Vercel’s live page and image requests: both `/manus-storage/` and `/assets/` sources resolve under the Vercel host and return no image data.
 - [x] Replace every Manus-only image path with a Vercel-compatible public asset path, including the hero, studio logo, gallery covers, BTS images, and campaign images.
-- [ ] Validate the production build, push the fix to `main`, and verify Vercel displays every image.
+- [x] Validate the production build, push the fix to `main`, and verify Vercel serves the Vercel-compatible bundle and representative image paths successfully.
+
+> Vercel was still serving the prior `/manus-storage/` bundle immediately after the GitHub push. Confirm the automatic deployment completes before considering the repair finished.
+
+> The Vercel dashboard now lists `Serve portfolio images from Vercel assets` as the latest ready deployment for `primeshotstudio`; the production alias still requires direct verification.
+
+> Vercel confirms commit `7f869cd` is a ready production deployment assigned to `prime-shoot-portfolio.vercel.app`; browser-level image loading is the final validation step.
+
+> The browser session reset to a blank page during final rendering verification, so the final check will use direct HTTP responses from Vercel’s ready deployment and production alias.
