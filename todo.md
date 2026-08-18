@@ -470,3 +470,9 @@
 
 - [x] Check whether the latest animation update has already reached `main`.
 - [x] Push any remaining local changes and verify the latest remote commit.
+
+## Olive Noir animated background
+
+- [x] Review current page layers and background surfaces for a non-intrusive animation placement.
+- [x] Add a restrained ambient background movement that preserves contrast and honors reduced-motion preferences.
+- [x] Verify the treatment on desktop and mobile, then publish the update.
