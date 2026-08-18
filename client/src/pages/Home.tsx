@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import AnimatedHeadline from "@/components/AnimatedHeadline";
 import PortfolioHeader from "@/components/PortfolioHeader";
 import StaggerReveal from "@/components/StaggerReveal";
+import SpotlightSurface from "@/components/SpotlightSurface";
 import { galleryCategories } from "@/data/gallery";
 
 const clientBrands = [
@@ -58,7 +59,7 @@ export default function Home() {
         </div>
         <div className="brands-manifesto"><span>Selected client archive</span><i /><span>Built with intention</span></div>
         <StaggerReveal className="brand-logo-grid">
-          {clientBrands.map((brand, index) => <div className={`brand-logo-card tone-${index + 1}`} key={brand.src}><div className="brand-card-inner"><img src={brand.src} alt={brand.alt} loading="lazy" decoding="async" /></div><span className="brand-card-index">0{index + 1}</span></div>)}
+          {clientBrands.map((brand, index) => <SpotlightSurface className={`brand-logo-card tone-${index + 1}`} key={brand.src}><div className="brand-card-inner"><img src={brand.src} alt={brand.alt} loading="lazy" decoding="async" /></div><span className="brand-card-index">0{index + 1}</span></SpotlightSurface>)}
         </StaggerReveal>
       </section>
 
@@ -67,7 +68,7 @@ export default function Home() {
         <div className="gallery-intro"><AnimatedHeadline id="gallery-title" delay={40}>The<br /><em>gallery.</em></AnimatedHeadline><p>Three focused archives for process, campaign photography, and social-first design.</p></div>
         <StaggerReveal className="category-card-grid home-gallery-card-grid">
           {galleryCategories.map((category) => (
-            <Link className="category-card" href={`/gallery/${category.slug}`} key={category.slug}>
+            <SpotlightSurface as={Link} className="category-card" href={`/gallery/${category.slug}`} key={category.slug}>
               <div className="category-card-image">
                 <img src={category.coverImage.src} alt={category.coverImage.alt} loading="lazy" decoding="async" />
                 <span className="category-card-index">{category.number}</span>
@@ -77,7 +78,7 @@ export default function Home() {
                 <p>{category.note}</p>
                 <span>Open archive <ArrowUpRight size={15} /></span>
               </div>
-            </Link>
+            </SpotlightSurface>
           ))}
         </StaggerReveal>
         <div className="archive-row"><span>Prime Shot Creative / Selected Work</span><span>Choose a category to explore</span></div>

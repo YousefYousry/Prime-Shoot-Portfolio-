@@ -452,5 +452,22 @@ h2 em { color: #9aa97b; font-style: italic; font-weight: 400; }
   .category-card-copy { padding: 20px 0 24px; }
   .category-card-copy h2, .category-card-copy h3 { font-size: clamp(32px, 11vw, 46px); }
   .gallery-index-page .archive-row { margin-top: 52px; }
-  .home-gallery-card-grid { margin-top: 54px; }
+.home-gallery-card-grid { margin-top: 54px; }
+}
+
+/* Olive Noir Editorial: local pointer spotlight adds material depth to archive cards without replacing the restrained olive/black composition. */
+.spotlight-surface { --spotlight-x: 50%; --spotlight-y: 50%; isolation: isolate; position: relative; }
+.spotlight-surface::after { background: radial-gradient(220px circle at var(--spotlight-x) var(--spotlight-y), rgba(168, 183, 126, .18), rgba(63, 76, 46, .07) 34%, transparent 70%); content: ""; inset: 0; opacity: 0; pointer-events: none; position: absolute; transition: opacity .24s cubic-bezier(.23, 1, .32, 1); z-index: 1; }
+.spotlight-surface .brand-card-inner, .spotlight-surface .brand-card-index, .spotlight-surface .category-card-image > *, .spotlight-surface .category-card-copy, .spotlight-surface > img, .spotlight-surface .gallery-image-index, .spotlight-surface .gallery-image-caption { position: relative; z-index: 2; }
+.spotlight-surface .gallery-image-index, .spotlight-surface .gallery-image-caption { position: absolute; }
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .spotlight-surface:hover::after { opacity: 1; }
+  .spotlight-surface:focus-visible::after { opacity: .72; }
+  .brand-logo-card.spotlight-surface::after { background: radial-gradient(160px circle at var(--spotlight-x) var(--spotlight-y), rgba(197, 207, 160, .22), rgba(63, 76, 46, .08) 38%, transparent 73%); }
+  .gallery-image.spotlight-surface::after { background: radial-gradient(240px circle at var(--spotlight-x) var(--spotlight-y), rgba(168, 183, 126, .16), rgba(9, 10, 8, .03) 43%, transparent 72%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spotlight-surface::after { display: none; }
 }

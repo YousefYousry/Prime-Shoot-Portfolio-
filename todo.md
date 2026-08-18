@@ -476,3 +476,10 @@
 - [x] Review current page layers and background surfaces for a non-intrusive animation placement.
 - [x] Add a restrained ambient background movement that preserves contrast and honors reduced-motion preferences.
 - [x] Verify the treatment on desktop and mobile, then publish the update.
+
+## Brand and gallery spotlight treatment
+
+- [x] Review the supplied spotlight effect against the existing brand and gallery card structures.
+- [x] Implement a reusable, pointer-local Olive Noir spotlight wrapper without global pointer listeners.
+- [x] Apply it to brand logos and gallery frames with keyboard and reduced-motion fallbacks.
+- [x] Verify desktop and mobile interaction quality, then publish the update.
