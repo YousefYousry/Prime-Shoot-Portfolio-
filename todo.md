@@ -438,3 +438,9 @@
 > The resulting Vercel payload is 4.2 MB, down from the 42 MB source-media footprint. The initial JavaScript bundle is now 488.79 kB (139.90 kB gzip), and the Gallery route is a separate 8.38 kB (1.47 kB gzip) chunk.
 
 > Optimizations are committed to GitHub as `024a52e` and Vercel reports that commit as ready in production. The active domain is `prime-shot.vercel.app` (the older `prime-shoot-portfolio.vercel.app` alias is no longer deployed). The production JavaScript bundle references the optimized WebP hero and does not reference its legacy JPEG source. Browser verification confirms the hero, studio logo, and all three category covers render successfully from the public WebP paths.
+
+## Vercel gallery direct-refresh repair
+
+- [x] Reproduce the `404` response at all three direct gallery category URLs on Vercel.
+- [x] Add an SPA fallback that returns the app shell for gallery routes while preserving direct public-asset delivery.
+- [ ] Build, push, and verify direct refreshes for Behind the Scenes, Model Shots, and Social Media Designs.
