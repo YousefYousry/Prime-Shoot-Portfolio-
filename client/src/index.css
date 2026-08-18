@@ -342,6 +342,14 @@ h2 em { color: #9aa97b; font-style: italic; font-weight: 400; }
 .simple-gallery-grid { margin-top: 0; }
 .simple-gallery-grid .gallery-image:first-child { grid-column: span 2; grid-row: span 2; }
 .simple-gallery-grid .gallery-image:first-child img { aspect-ratio: 8 / 10; }
+.category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-portrait img { aspect-ratio: 3 / 4; }
+.category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-portrait-tall img { aspect-ratio: 9 / 16; }
+.category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-landscape { grid-column: span 2; grid-row: auto; }
+.category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-landscape img { aspect-ratio: 16 / 9; }
+.category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-featured.gallery-portrait { grid-column: span 2; grid-row: span 2; }
+.category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-featured.gallery-portrait img { aspect-ratio: 3 / 4; }
+.category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-featured.gallery-portrait-tall { grid-column: span 1; grid-row: auto; }
+.category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-featured.gallery-portrait-tall img { aspect-ratio: 9 / 16; }
 .simple-gallery-grid.single-cover { grid-template-columns: minmax(0, 1fr); }
 .simple-gallery-grid.single-cover .gallery-image:first-child { grid-column: 1; grid-row: auto; max-width: 900px; }
 .simple-gallery-grid.single-cover .gallery-image:first-child img { aspect-ratio: 3 / 2; }
@@ -377,6 +385,14 @@ h2 em { color: #9aa97b; font-style: italic; font-weight: 400; }
   .simple-gallery-grid, .category-social-media-designs .simple-gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .simple-gallery-grid .gallery-image:first-child, .category-social-media-designs .simple-gallery-grid .gallery-image:first-child { grid-column: span 2; grid-row: auto; }
   .simple-gallery-grid .gallery-image:first-child img, .category-social-media-designs .simple-gallery-grid .gallery-image:first-child img { aspect-ratio: 4 / 5; }
+  .category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-portrait img { aspect-ratio: 3 / 4; }
+  .category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-portrait-tall img { aspect-ratio: 9 / 16; }
+  .category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-landscape { grid-column: span 2; grid-row: auto; }
+  .category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-landscape img { aspect-ratio: 16 / 9; }
+  .category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-featured.gallery-portrait { grid-column: span 2; grid-row: auto; }
+  .category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-featured.gallery-portrait img { aspect-ratio: 3 / 4; }
+  .category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-featured.gallery-portrait-tall { grid-column: span 1; grid-row: auto; }
+  .category-behind-the-scenes .simple-gallery-grid .gallery-image.gallery-featured.gallery-portrait-tall img { aspect-ratio: 9 / 16; }
   .simple-gallery-grid.single-cover { grid-template-columns: minmax(0, 1fr); }
   .simple-gallery-grid.single-cover .gallery-image:first-child { grid-column: 1; }
   .simple-gallery-grid.single-cover .gallery-image:first-child img { aspect-ratio: 3 / 2; }

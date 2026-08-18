@@ -401,3 +401,9 @@
 - [x] Identify why the Home hero image and Prime Shot logo do not appear: obsolete `/assets/brand/` paths referred to a removed directory.
 - [x] Restore reliable hero-image and logo asset references without changing the Home design, using managed storage paths for the camera hero and approved studio logo.
 - [x] Verify the restored hero image and logo on desktop and mobile, including TypeScript and production-build checks.
+
+## Free-plan checkpoint recovery
+
+- [x] Confirm that each large local gallery file blocking publication already has a managed-storage equivalent.
+- [x] Remove only redundant local gallery and build-output copies, keeping the gallery’s live managed-storage references unchanged.
+- [ ] Retry the checkpoint save and confirm the free-plan publication succeeds.
