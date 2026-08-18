@@ -1,5 +1,4 @@
 /* Style direction: Olive Noir Editorial — warm off-white typography on near-black, Prime Olive as a signal color, and asymmetric image-led composition. */
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -10,7 +9,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; background: #0a0a0a; }
-body { margin: 0; background: #0a0a0a; color: #f2f0ea; font-family: 'Space Grotesk', sans-serif; font-weight: 400; }
+body { margin: 0; background: #0a0a0a; color: #f2f0ea; font-family: 'Space Grotesk', Arial, sans-serif; font-weight: 400; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 .site-shell { overflow: hidden; background: #0a0a0a; }

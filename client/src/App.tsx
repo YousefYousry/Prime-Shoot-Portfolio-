@@ -1,13 +1,12 @@
 /* Style direction: Olive Noir Editorial — cinematic dark canvas, restrained olive signal color, and image-led navigation. */
-import { Toaster } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import { GalleryPage } from "./pages/Gallery";
 import Home from "./pages/Home";
+
+const GalleryPage = lazy(() => import("./pages/Gallery"));
 
 function GalleryRedirect() {
   useEffect(() => {
@@ -33,10 +32,9 @@ export default function App() {
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="dark">
-        <TooltipProvider>
-          <Toaster />
+        <Suspense fallback={<main className="site-shell" aria-busy="true" />}>
           <Router />
-        </TooltipProvider>
+        </Suspense>
       </ThemeProvider>
     </ErrorBoundary>
   );

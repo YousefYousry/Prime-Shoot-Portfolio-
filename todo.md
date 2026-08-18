@@ -427,3 +427,12 @@
 > Vercel confirms commit `7f869cd` is a ready production deployment assigned to `prime-shoot-portfolio.vercel.app`; browser-level image loading is the final validation step.
 
 > The browser session reset to a blank page during final rendering verification, so the final check will use direct HTTP responses from Vercel’s ready deployment and production alias.
+
+## Performance optimization
+
+- [x] Measure the current production bundle and image payloads: 42 MB of source media, led by large PNG/JPEG photography; optimized WebP versions total 2.33 MB.
+- [x] Improve image loading priority, decoding behavior, and offscreen loading without changing visual composition: preload the LCP hero, decode images asynchronously, and defer below-the-fold imagery.
+- [x] Split the gallery route from the initial application bundle, remove unused toast and tooltip providers, move font loading into the document head, and retain Vercel-cacheable public paths.
+- [x] Validate the optimized production build and desktop/mobile rendering. Publish the optimized static image set and application code to GitHub/Vercel.
+
+> The resulting Vercel payload is 4.2 MB, down from the 42 MB source-media footprint. The initial JavaScript bundle is now 488.79 kB (139.90 kB gzip), and the Gallery route is a separate 8.38 kB (1.47 kB gzip) chunk.

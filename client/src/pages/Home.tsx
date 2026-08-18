@@ -28,7 +28,7 @@ export default function Home() {
       <PortfolioHeader />
 
       <section id="top" className="hero-section">
-        <div className="hero-image"><img src="/assets/brand/prime-shot-camera-hero.jpg" alt="Professional camera on a sculptural studio surface in cinematic light" /></div>
+        <div className="hero-image"><img src="/assets/brand/prime-shot-camera-hero.webp" alt="Professional camera on a sculptural studio surface in cinematic light" fetchPriority="high" decoding="async" /></div>
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1><span>Prime</span><span>Shot</span><span>Creative</span></h1>
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
         <div className="brands-manifesto"><span>Selected client archive</span><i /><span>Built with intention</span></div>
         <div className="brand-logo-grid">
-          {clientBrands.map((brand, index) => <div className={`brand-logo-card tone-${index + 1}`} key={brand.src}><div className="brand-card-inner"><img src={brand.src} alt={brand.alt} loading="lazy" /></div><span className="brand-card-index">0{index + 1}</span></div>)}
+          {clientBrands.map((brand, index) => <div className={`brand-logo-card tone-${index + 1}`} key={brand.src}><div className="brand-card-inner"><img src={brand.src} alt={brand.alt} loading="lazy" decoding="async" /></div><span className="brand-card-index">0{index + 1}</span></div>)}
         </div>
       </section>
 
@@ -67,7 +67,7 @@ export default function Home() {
           {galleryCategories.map((category) => (
             <Link className="category-card" href={`/gallery/${category.slug}`} key={category.slug}>
               <div className="category-card-image">
-                <img src={category.coverImage.src} alt={category.coverImage.alt} loading="eager" />
+                <img src={category.coverImage.src} alt={category.coverImage.alt} loading="lazy" decoding="async" />
                 <span className="category-card-index">{category.number}</span>
               </div>
               <div className="category-card-copy">
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="statement-section"><div className="statement-logo-frame"><img className="statement-logo" src="/assets/brand/prime-shot-final-logo.webp" alt="Prime Shot Creative" /></div><p>Good work begins with<br /><em>a point of view.</em></p><span className="statement-rule" /></section>
+      <section className="statement-section"><div className="statement-logo-frame"><img className="statement-logo" src="/assets/brand/prime-shot-final-logo.webp" alt="Prime Shot Creative" loading="lazy" decoding="async" /></div><p>Good work begins with<br /><em>a point of view.</em></p><span className="statement-rule" /></section>
 
       <footer id="contact" className="site-footer section-pad">
         <div className="section-label"><span>05</span><span>Start a conversation</span></div>
@@ -101,7 +101,7 @@ export default function Home() {
             <a className="footer-instagram" href="https://www.instagram.com/prime.shoot1/" target="_blank" rel="noreferrer"><span>Instagram</span>Prime Shoot <ArrowUpRight size={16} strokeWidth={1.2} /></a>
           </div>
         </div>
-        <div className="footer-identity"><span className="official-logo-frame"><img className="official-logo" src="/assets/brand/prime-shot-final-logo.webp" alt="Prime Shot Creative" /></span><span className="footer-identity-note">Visual stories / commercial photography / creative production</span></div>
+        <div className="footer-identity"><span className="official-logo-frame"><img className="official-logo" src="/assets/brand/prime-shot-final-logo.webp" alt="Prime Shot Creative" loading="lazy" decoding="async" /></span><span className="footer-identity-note">Visual stories / commercial photography / creative production</span></div>
         <div className="footer-bottom"><span>© 2026 Prime Shot Creative</span><span>Available for selected projects</span><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
