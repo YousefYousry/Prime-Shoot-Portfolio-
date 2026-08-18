@@ -413,3 +413,9 @@
 - [x] Review the completed migration files and repository status.
 - [x] Commit the managed-gallery asset migration and related implementation changes to `main`.
 - [x] Push to GitHub and verify the resulting commit.
+
+## Vercel production image repair
+
+- [x] Inspect Vercel’s live page and image requests: both `/manus-storage/` and `/assets/` sources resolve under the Vercel host and return no image data.
+- [x] Replace every Manus-only image path with a Vercel-compatible public asset path, including the hero, studio logo, gallery covers, BTS images, and campaign images.
+- [ ] Validate the production build, push the fix to `main`, and verify Vercel displays every image.
