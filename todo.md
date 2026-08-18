@@ -444,3 +444,5 @@
 - [x] Reproduce the `404` response at all three direct gallery category URLs on Vercel.
 - [x] Add an SPA fallback that returns the app shell for gallery routes while preserving direct public-asset delivery.
 - [ ] Build, push, and verify direct refreshes for Behind the Scenes, Model Shots, and Social Media Designs.
+
+> Vercel reports commit `ef481c7` as ready in production, but the initial named-parameter rewrite did not match the gallery URLs. The fallback will be revised to Vercel’s explicit regular-expression route form and revalidated.
