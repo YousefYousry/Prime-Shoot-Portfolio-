@@ -410,6 +410,6 @@
 
 ## GitHub free-plan asset migration
 
-- [ ] Review the completed migration files and repository status.
-- [ ] Commit the managed-gallery asset migration and related implementation changes to `main`.
-- [ ] Push to GitHub and verify the resulting commit.
+- [x] Review the completed migration files and repository status.
+- [x] Commit the managed-gallery asset migration and related implementation changes to `main`.
+- [x] Push to GitHub and verify the resulting commit.
