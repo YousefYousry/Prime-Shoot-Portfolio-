@@ -86,3 +86,9 @@ Keep the supplied geometric “P” symbol as the primary brand mark. Pair it wi
 - Use the supplied geometric P primarily as a compact Prime Olive archive stamp; reserve horizontal lockups for full identity moments only.
 - Treat client logos as archival artifacts using controlled off-white, black, olive, and muted print tones rather than pastel card colors.
 - Keep brands copy concise, concrete, and observational; avoid sales-led phrases and generic agency claims.
+
+## Style Decisions — Gallery Pages, First-Draft Restoration
+
+- Category pages follow the original Selected Work treatment: a simple left-aligned section label, an oversized title, short explanatory copy, and the established responsive image grid.
+- Separate URLs serve only as a clean way to organize the three requested categories; they do not introduce a second visual system or a new archive landing experience.
+- Model Shots and Social Media Designs keep their random image order and featured first tile. Behind the Scenes remains a modest text-only no-image section until real BTS photos are supplied.

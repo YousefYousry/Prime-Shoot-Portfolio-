@@ -1,75 +1,36 @@
-/* Style direction: Olive Noir Editorial — asymmetry, contact-sheet metadata, and restrained motion make the studio archive feel curated rather than templated. */
-import { ArrowDownRight, ArrowUpRight, Menu, X } from "lucide-react";
-import { useMemo, useState } from "react";
-
-type GalleryGroup = {
-  number: string;
-  title: string;
-  note: string;
-  images: { src: string; alt: string }[];
-};
-
-const galleryGroups: GalleryGroup[] = [
-  {
-    number: "01",
-    title: "Model Shots",
-    note: "Studio portraits / campaign frames / fashion studies",
-    images: [
-      ["20.2_d0db3c23.png", "Genoa model campaign frame"], ["19.2_09a376c6.png", "Genoa model campaign frame"], ["18.1_c9a9b3bd.png", "Genoa model campaign frame"], ["11.1_0fa9e0fa.png", "Genoa model campaign frame"], ["10.1_7ea1182e.png", "Genoa model campaign frame"], ["10-heda-model_829c05af.png", "Heda model studio portrait"], ["5.5_2267d3ec.png", "Genoa model campaign frame"], ["4.4_eef306f7.png", "Genoa model campaign frame"], ["3.3_2cecc222.png", "Genoa model campaign frame"], ["2.4_5a87b258.png", "Genoa model campaign frame"], ["8.1_1314e935.png", "Genoa model campaign frame"], ["7_2b17ca0a.png", "Weekend Club model campaign design"], ["12_4468f818.png", "Weekend Club group campaign frame"],
-    ].map(([file, alt]) => ({ src: `/manus-storage/${file}`, alt })),
-  },
-  {
-    number: "02",
-    title: "Social Media Designs",
-    note: "Content systems / promotional layouts / social-first creative",
-    images: [
-      ["Te2_6da67eb3.png", "Genoa graphic campaign composition"], ["Cover2_524bf341.jpeg", "Genoa group campaign composition"], ["2_52813dbb.png", "Weekend Club social media design"], ["5_49d6f880.png", "Heda social media design"], ["3_10ed06d8.png", "Heda social media design"],
-    ].map(([file, alt]) => ({ src: `/manus-storage/${file}`, alt })),
-  },
-];
+/* Style direction: Olive Noir Editorial — retain the original simple Selected Work section while using restrained text links to lead into the three standalone visual stories. */
+import { ArrowDownRight, ArrowUpRight } from "lucide-react";
+import { Link } from "wouter";
+import { useEffect } from "react";
+import PortfolioHeader from "@/components/PortfolioHeader";
+import { galleryCategories } from "@/data/gallery";
 
 const clientBrands = [
-  { src: "/manus-storage/1681335201236_2e1429bf.png", alt: "Molton brand mark" },
-  { src: "/manus-storage/Corona-Mono-Light_Logo_4935a4c9.png", alt: "Corona brand mark" },
-  { src: "/manus-storage/crown_98b0e961.png", alt: "Crown brand mark" },
-  { src: "/manus-storage/genoaa_891a5f39.png", alt: "Genoa brand mark" },
-  { src: "/manus-storage/logo_3659e417.png", alt: "Client brand mark" },
-  { src: "/manus-storage/Asset3@4xlogoo_c099737e.png", alt: "Client brand mark" },
-  { src: "/manus-storage/jilam-white-logo_6d4ad336.png", alt: "Jilam brand mark" },
+  { src: "/assets/brands/1681335201236.png?v=prime-shot-studio", alt: "Molton brand mark" },
+  { src: "/assets/brands/Corona-Mono-Light_Logo.png?v=prime-shot-studio", alt: "Corona brand mark" },
+  { src: "/assets/brands/crown.png?v=prime-shot-studio", alt: "Crown brand mark" },
+  { src: "/assets/brands/genoaa.png?v=prime-shot-studio", alt: "Genoa brand mark" },
+  { src: "/assets/brands/logo.png?v=prime-shot-studio", alt: "Client brand mark" },
+  { src: "/assets/brands/Asset3@4xlogoo.png?v=prime-shot-studio", alt: "Client brand mark" },
+  { src: "/assets/brands/jilam-white-logo.png?v=prime-shot-studio", alt: "Jilam brand mark" },
 ];
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const randomizedGalleryGroups = useMemo(() => galleryGroups.map((group, index) => index < 2 ? { ...group, images: [...group.images].sort(() => Math.random() - 0.5) } : group), []);
-  const closeMenu = () => setMenuOpen(false);
+  useEffect(() => {
+    if (window.location.hash === "#work") {
+      requestAnimationFrame(() => document.getElementById("work")?.scrollIntoView({ block: "start" }));
+    }
+  }, []);
 
   return (
     <main className="site-shell">
-      <header className={`site-header ${menuOpen ? "menu-is-open" : ""}`}>
-        <a className="brand-lockup" href="#top" onClick={closeMenu} aria-label="Prime Shot Creative home">
-          <span className="official-logo-frame"><img className="official-logo" src="/manus-storage/prime-shot-final-logo_3a8d8d0f.webp" alt="Prime Shot Creative" /></span>
-        </a>
-        <nav className="desktop-nav" aria-label="Primary navigation">
-          <a href="#work">Work</a><a href="#services">Services</a><a href="#studio">Studio</a><a href="#contact">Contact</a>
-        </nav>
-        <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label={menuOpen ? "Close menu" : "Open menu"}>
-          {menuOpen ? <X size={21} strokeWidth={1.4} /> : <Menu size={21} strokeWidth={1.4} />}<span>{menuOpen ? "Close" : "Menu"}</span>
-        </button>
-      </header>
-
-      <div className={`mobile-menu ${menuOpen ? "visible" : ""}`} aria-hidden={!menuOpen}>
-        <div className="mobile-menu-inner">
-          <span className="eyebrow">Navigation / 00</span>
-          {['Work', 'Services', 'Studio', 'Contact'].map((item, index) => <a href={`#${item.toLowerCase()}`} key={item} onClick={closeMenu}><small>0{index + 1}</small>{item}</a>)}
-          <div className="mobile-menu-foot"><span>Available for selected projects</span></div>
-        </div>
-      </div>
+      <PortfolioHeader />
 
       <section id="top" className="hero-section">
-        <div className="hero-image"><img src="/manus-storage/prime-shot-camera-hero_363ce75c.jpg" alt="Professional camera on a sculptural studio surface in cinematic light" /></div>
+        <div className="hero-image"><img src="/assets/brand/prime-shot-camera-hero.jpg" alt="Professional camera on a sculptural studio surface in cinematic light" /></div>
         <div className="hero-overlay" />
         <div className="hero-content">
-          <h1><span>Prime Shot</span><span>Creative</span></h1>
+          <h1><span>Prime</span><span>Shot</span><span>Creative</span></h1>
           <div className="hero-bottom">
             <p>Visual stories, commercial photography<br />and creative production for brands.</p>
             <a className="circle-link" href="#work" aria-label="Explore selected work"><ArrowDownRight size={23} strokeWidth={1.2} /></a>
@@ -100,8 +61,23 @@ export default function Home() {
 
       <section id="work" className="work-section section-pad gallery-section" aria-labelledby="gallery-title">
         <div className="section-label"><span>03</span><span>Selected work</span></div>
-        <div className="gallery-intro"><h2 id="gallery-title">Selected<br /><em>work.</em></h2><p>A considered selection of campaigns, models, compositions, and social-first design — assembled by discipline.</p></div>
-        <div className="gallery-groups">{randomizedGalleryGroups.map((group) => <section className="gallery-group" key={group.number} aria-labelledby={`gallery-${group.number}`}><div className="gallery-group-head"><div><span className="gallery-group-index">{group.number}</span><h3 id={`gallery-${group.number}`}>{group.title}</h3></div><p>{group.note}</p></div><div className="gallery-grid">{group.images.map((image, index) => <a className={`gallery-image ${index === 0 ? "gallery-featured" : ""}`} href={image.src} target="_blank" rel="noreferrer" key={image.src}><img src={image.src} alt={image.alt} loading="lazy" /></a>)}</div></section>)}</div>
+        <div className="gallery-intro"><h2 id="gallery-title">The<br /><em>gallery.</em></h2><p>Three focused archives for process, campaign photography, and social-first design.</p></div>
+        <div className="category-card-grid home-gallery-card-grid">
+          {galleryCategories.map((category) => (
+            <Link className="category-card" href={`/gallery/${category.slug}`} key={category.slug}>
+              <div className="category-card-image">
+                <img src={category.coverImage.src} alt={category.coverImage.alt} loading="eager" />
+                <span className="category-card-index">{category.number}</span>
+              </div>
+              <div className="category-card-copy">
+                <h3>{category.navLabel}</h3>
+                <p>{category.note}</p>
+                <span>Open archive <ArrowUpRight size={15} /></span>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div className="archive-row"><span>Prime Shot Creative / Selected Work</span><span>Choose a category to explore</span></div>
       </section>
 
       <section id="services" className="services-section section-pad">
@@ -112,7 +88,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="statement-section"><div className="statement-logo-frame"><img className="statement-logo" src="/manus-storage/prime-shot-final-logo_3a8d8d0f.webp" alt="Prime Shot Creative" /></div><p>Good work begins with<br /><em>a point of view.</em></p><span className="statement-rule" /></section>
+      <section className="statement-section"><div className="statement-logo-frame"><img className="statement-logo" src="/assets/brand/prime-shot-final-logo.webp" alt="Prime Shot Creative" /></div><p>Good work begins with<br /><em>a point of view.</em></p><span className="statement-rule" /></section>
 
       <footer id="contact" className="site-footer section-pad">
         <div className="section-label"><span>05</span><span>Start a conversation</span></div>
@@ -124,7 +100,7 @@ export default function Home() {
             <a className="footer-instagram" href="https://www.instagram.com/prime.shoot1/" target="_blank" rel="noreferrer"><span>Instagram</span>Prime Shoot <ArrowUpRight size={16} strokeWidth={1.2} /></a>
           </div>
         </div>
-        <div className="footer-identity"><span className="official-logo-frame"><img className="official-logo" src="/manus-storage/prime-shot-final-logo_3a8d8d0f.webp" alt="Prime Shot Creative" /></span><span className="footer-identity-note">Visual stories / commercial photography / creative production</span></div>
+        <div className="footer-identity"><span className="official-logo-frame"><img className="official-logo" src="/assets/brand/prime-shot-final-logo.webp" alt="Prime Shot Creative" /></span><span className="footer-identity-note">Visual stories / commercial photography / creative production</span></div>
         <div className="footer-bottom"><span>© 2026 Prime Shot Creative</span><span>Available for selected projects</span><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
