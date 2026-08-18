@@ -18,7 +18,7 @@ export default function PortfolioHeader() {
     <>
       <header className={`site-header ${menuOpen ? "menu-is-open" : ""}`}>
         <Link className="brand-lockup" href="/" onClick={closeMenu} aria-label="Prime Shot Creative home">
-          <span className="official-logo-frame"><img className="official-logo" src="/assets/brand/prime-shot-final-logo.webp" alt="Prime Shot Creative" /></span>
+          <span className="official-logo-frame"><img className="official-logo" src="/manus-storage/prime-shot-final-logo_8052ebe7.webp" alt="Prime Shot Creative" /></span>
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {navigation.map((item) => <a href={item.href} key={item.label}>{item.label}</a>)}

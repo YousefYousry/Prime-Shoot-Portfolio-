@@ -389,3 +389,15 @@
 ## GitHub push request
 
 - [x] Confirm the active GitHub connection, commit the completed portfolio updates, and push them to Prime-Shot-Studio.
+
+## BTS landscape image addition
+
+- [x] Prepare the new 16:9 behind-the-scenes photograph for web delivery.
+- [x] Add it to the Behind the Scenes category while preserving its landscape composition.
+- [x] Verify the mixed portrait-and-landscape BTS archive on desktop and mobile.
+
+## Hero image and studio-logo loading repair
+
+- [x] Identify why the Home hero image and Prime Shot logo do not appear: obsolete `/assets/brand/` paths referred to a removed directory.
+- [x] Restore reliable hero-image and logo asset references without changing the Home design, using managed storage paths for the camera hero and approved studio logo.
+- [x] Verify the restored hero image and logo on desktop and mobile, including TypeScript and production-build checks.
