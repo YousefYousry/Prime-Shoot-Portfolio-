@@ -476,3 +476,8 @@
 - [x] Review current page layers and background surfaces for a non-intrusive animation placement.
 - [x] Add a restrained ambient background movement that preserves contrast and honors reduced-motion preferences.
 - [x] Verify the treatment on desktop and mobile, then publish the update.
+
+## Spotlight rollback
+
+- [x] Remove the recently added spotlight wrapper from brand logo and gallery cards.
+- [ ] Verify the approved animation system remains intact, then synchronize the rollback to GitHub/Vercel.
