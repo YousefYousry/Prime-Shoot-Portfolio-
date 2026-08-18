@@ -446,3 +446,9 @@
 - [x] Build, push, and verify direct refreshes for Behind the Scenes, Model Shots, and Social Media Designs.
 
 > Vercel required a `/gallery/(.*)` matcher with a `/index` destination because `cleanUrls` is enabled. Commit `119ce40` is now live: all three direct category refreshes return `200` with the React app shell, and a representative static image also returns `200`.
+
+## Editorial headline animation
+
+- [x] Inventory all page and gallery headings that should use the shared editorial reveal, including hero, section, card, statement, contact, gallery, and archive-empty titles.
+- [x] Add a reusable animation treatment that respects reduced-motion preferences.
+- [x] Verify headline motion on desktop and mobile, then publish the update.

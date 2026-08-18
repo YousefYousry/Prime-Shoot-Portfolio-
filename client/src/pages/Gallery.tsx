@@ -4,6 +4,7 @@ import { Link, useRoute } from "wouter";
 import PortfolioHeader from "@/components/PortfolioHeader";
 import { galleryCategories, getGalleryCategory } from "@/data/gallery";
 import { useLayoutEffect, useMemo } from "react";
+import AnimatedHeadline from "@/components/AnimatedHeadline";
 
 export default function GalleryPage() {
   const [, params] = useRoute("/gallery/:slug");
@@ -20,7 +21,7 @@ export default function GalleryPage() {
         <PortfolioHeader />
         <section className="work-section section-pad simple-gallery-page">
           <div className="section-label"><span>03</span><span>Selected work</span></div>
-          <h1>That archive<br /><em>is not here.</em></h1>
+          <AnimatedHeadline as="h1">That archive<br /><em>is not here.</em></AnimatedHeadline>
           <Link className="text-link" href="/#work"><ArrowLeft size={16} /> Back to selected work</Link>
         </section>
       </main>
@@ -32,7 +33,7 @@ export default function GalleryPage() {
       <PortfolioHeader />
       <section className="work-section section-pad simple-gallery-page" aria-label={`${category.navLabel} gallery`}>
         <div className="section-label"><span>{category.number}</span><span>Selected work</span></div>
-        <div className="gallery-intro"><h1>{category.titleMain}<br /><em>{category.titleAccent}</em></h1><p>{category.description}</p></div>
+        <div className="gallery-intro"><AnimatedHeadline as="h1" delay={100}>{category.titleMain}<br /><em>{category.titleAccent}</em></AnimatedHeadline><p>{category.description}</p></div>
         <nav className="simple-category-nav" aria-label="Gallery category navigation">
           {galleryCategories.map((item) => <Link className={item.slug === category.slug ? "active" : ""} href={`/gallery/${item.slug}`} key={item.slug}><small>{item.number}</small>{item.navLabel}</Link>)}
         </nav>
