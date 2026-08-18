@@ -92,3 +92,8 @@ Keep the supplied geometric “P” symbol as the primary brand mark. Pair it wi
 - Category pages follow the original Selected Work treatment: a simple left-aligned section label, an oversized title, short explanatory copy, and the established responsive image grid.
 - Separate URLs serve only as a clean way to organize the three requested categories; they do not introduce a second visual system or a new archive landing experience.
 - Model Shots and Social Media Designs keep their random image order and featured first tile. Behind the Scenes remains a modest text-only no-image section until real BTS photos are supplied.
+
+## Style Decisions — Interaction Revision
+
+- Gallery frames reveal their index, a concise viewing cue, and a Prime Olive signal on hover or keyboard focus; this makes each image read as a cataloged contact-sheet artifact without obscuring the photography.
+- Headline movement is limited to a small, alternating horizontal scroll drift; it supports the cinematic editorial rhythm without turning the page into a kinetic display.

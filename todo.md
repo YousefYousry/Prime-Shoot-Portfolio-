@@ -449,6 +449,13 @@
 
 ## Editorial headline animation
 
-- [x] Inventory all page and gallery headings that should use the shared editorial reveal, including hero, section, card, statement, contact, gallery, and archive-empty titles.
+- [x] Inventory all page and gallery headings that should use the shared editorial reveal, including hero, section, card, statement, contact, and archive-empty titles.
 - [x] Add a reusable animation treatment that respects reduced-motion preferences.
 - [x] Verify headline motion on desktop and mobile, then publish the update.
+
+## Gallery interaction and scroll-linked headline motion
+
+- [x] Review existing gallery captions and the headline-reveal component for compatible interaction hooks.
+- [x] Add smooth, keyboard-accessible caption hover transitions across gallery cards and archive images.
+- [x] Add restrained horizontal headline drift during scrolling, with reduced-motion support.
+- [x] Verify the interactions on desktop and mobile, then publish the update.

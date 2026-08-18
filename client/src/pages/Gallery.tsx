@@ -38,7 +38,7 @@ export default function GalleryPage() {
           {galleryCategories.map((item) => <Link className={item.slug === category.slug ? "active" : ""} href={`/gallery/${item.slug}`} key={item.slug}><small>{item.number}</small>{item.navLabel}</Link>)}
         </nav>
         {randomizedImages.length > 0 ? (
-          <div className="gallery-grid simple-gallery-grid">{randomizedImages.map((image, index) => <a className={`gallery-image gallery-${image.frame ?? "standard"} ${index === 0 ? "gallery-featured" : ""}`} href={image.src} target="_blank" rel="noreferrer" key={image.src}><img src={image.src} alt={image.alt} loading={index === 0 ? "eager" : "lazy"} fetchPriority={index === 0 ? "high" : "low"} decoding="async" /></a>)}</div>
+          <div className="gallery-grid simple-gallery-grid">{randomizedImages.map((image, index) => <a className={`gallery-image gallery-${image.frame ?? "standard"} ${index === 0 ? "gallery-featured" : ""}`} href={image.src} target="_blank" rel="noreferrer" key={image.src}><img src={image.src} alt={image.alt} loading={index === 0 ? "eager" : "lazy"} fetchPriority={index === 0 ? "high" : "low"} decoding="async" /><span className="gallery-image-caption" aria-hidden="true"><small>{String(index + 1).padStart(2, "0")}</small><span>View frame</span><ArrowUpRight size={15} /></span></a>)}</div>
         ) : null}
         <div className="archive-row"><Link href="/#work"><ArrowLeft size={15} /> Back to selected work</Link><Link href="/#contact">Start a project <ArrowUpRight size={15} /></Link></div>
       </section>
