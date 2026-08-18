@@ -406,4 +406,10 @@
 
 - [x] Confirm that each large local gallery file blocking publication already has a managed-storage equivalent.
 - [x] Remove only redundant local gallery and build-output copies, keeping the gallery’s live managed-storage references unchanged.
-- [ ] Retry the checkpoint save and confirm the free-plan publication succeeds.
+- [x] Retry the checkpoint save and confirm the free-plan publication succeeds.
+
+## GitHub free-plan asset migration
+
+- [ ] Review the completed migration files and repository status.
+- [ ] Commit the managed-gallery asset migration and related implementation changes to `main`.
+- [ ] Push to GitHub and verify the resulting commit.
