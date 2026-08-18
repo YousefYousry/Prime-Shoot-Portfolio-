@@ -97,3 +97,4 @@ Keep the supplied geometric “P” symbol as the primary brand mark. Pair it wi
 
 - Gallery frames reveal their index, a concise viewing cue, and a Prime Olive signal on hover or keyboard focus; this makes each image read as a cataloged contact-sheet artifact without obscuring the photography.
 - Headline movement is limited to a small, alternating horizontal scroll drift; it supports the cinematic editorial rhythm without turning the page into a kinetic display.
+- Every gallery frame retains a visible mono index and Prime Olive rule; client-color-heavy imagery is therefore held inside the studio’s dark archive system even before interaction.

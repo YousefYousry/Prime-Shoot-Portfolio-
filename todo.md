@@ -459,3 +459,9 @@
 - [x] Add smooth, keyboard-accessible caption hover transitions across gallery cards and archive images.
 - [x] Add restrained horizontal headline drift during scrolling, with reduced-motion support.
 - [x] Verify the interactions on desktop and mobile, then publish the update.
+
+## Brand and gallery pop-up reveals
+
+- [x] Review brand logo and gallery item markup for reusable staggered reveal hooks.
+- [x] Add a scroll-triggered pop-up animation with staggered timing and reduced-motion support.
+- [x] Verify brand and gallery animations on desktop and mobile, then publish the update.

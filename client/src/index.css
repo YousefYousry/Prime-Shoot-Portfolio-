@@ -121,6 +121,21 @@ h2 em { color: #9aa97b; font-style: italic; font-weight: 400; }
 @media (max-width: 760px) { .site-header { height: 70px; padding: 0 20px; } .desktop-nav { display: none; } .menu-button { display: flex; } .hero-content { padding: 105px 20px 28px; } .hero-content h1 { font-size: clamp(67px, 19vw, 115px); line-height: .82; margin-bottom: 55px; max-width: 100%; } .hero-content h1 span:last-child { margin-left: 0; } .hero-bottom { align-items: flex-end; gap: 18px; } .hero-bottom p { font-size: 12px; max-width: 220px; } .circle-link { flex: 0 0 auto; height: 52px; width: 52px; } .hero-side-label { display: none; } .section-pad { padding: 92px 20px; } .intro-grid, .services-grid { display: block; margin-top: 55px; } .intro-copy { margin: 42px 0 0 20%; } h2 { font-size: clamp(44px, 13vw, 76px); } .work-head { display: block; } .work-note { margin: 28px 0 0 20%; text-align: left; } .filter-row { gap: 8px 17px; margin: 52px 0 30px; } .filter-row button { font-size: 9px; } .project-grid { display: block; } .project-tile, .project-tile.wide, .project-tile.tall, .project-tile.standard { margin: 0 0 55px; } .project-tile.tall { margin-left: 19%; } .project-tile.standard { margin-right: 19%; } .archive-row { font-size: 8px; margin-top: 25px; } .services-grid h2 { margin-bottom: 60px; } .service-list strong { font-size: 18px; } .statement-section { min-height: 390px; } .footer-main { align-items: start; display: flex; flex-direction: column; gap: 55px; margin-top: 70px; } .footer-bottom { flex-wrap: wrap; gap: 15px 26px; margin-top: 70px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
 
+/* Olive Noir archive reveal: marks and frames surface in quiet staggered bands as their catalog section enters view. */
+@media (prefers-reduced-motion: no-preference) {
+  .stagger-reveal > .brand-logo-card, .stagger-reveal > .category-card, .stagger-reveal > .gallery-image { opacity: 0; transform: translate3d(0, 18px, 0) scale(.965); transition: opacity .48s cubic-bezier(.23,1,.32,1), transform .58s cubic-bezier(.23,1,.32,1); will-change: opacity, transform; }
+  .stagger-reveal.is-visible > .brand-logo-card, .stagger-reveal.is-visible > .category-card, .stagger-reveal.is-visible > .gallery-image { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+  .stagger-reveal.is-visible > :nth-child(2) { transition-delay: 55ms; }
+  .stagger-reveal.is-visible > :nth-child(3) { transition-delay: 110ms; }
+  .stagger-reveal.is-visible > :nth-child(4) { transition-delay: 165ms; }
+  .stagger-reveal.is-visible > :nth-child(5) { transition-delay: 220ms; }
+  .stagger-reveal.is-visible > :nth-child(6) { transition-delay: 275ms; }
+  .stagger-reveal.is-visible > :nth-child(7) { transition-delay: 330ms; }
+  .stagger-reveal.is-visible > :nth-child(8) { transition-delay: 385ms; }
+  .stagger-reveal.is-visible > :nth-child(9) { transition-delay: 440ms; }
+  .stagger-reveal.is-visible > :nth-child(n + 10) { transition-delay: 495ms; }
+}
+
 /* Brands insert: a quiet, dark archive so the supplied white marks read with immediate contrast. */
 .brands-section { background: #11120f; color: #f2f0ea; }
 .brands-section .section-label { border-color: #34372d; color: #a8b77e; }
@@ -158,6 +173,7 @@ h2 em { color: #9aa97b; font-style: italic; font-weight: 400; }
 .gallery-image-caption small { color: #a8b77e; font-size: 8px; margin-right: auto; }
 .gallery-image:hover .gallery-image-caption, .gallery-image:focus-visible .gallery-image-caption { opacity: 1; transform: translateY(0); }
 .gallery-image:focus-visible { outline: 1px solid #a8b77e; outline-offset: 4px; }
+.gallery-image-index { background: rgba(10,10,10,.76); border-left: 1px solid #a8b77e; color: #d9d6cc; font-family: 'DM Mono', monospace; font-size: 8px; left: 10px; letter-spacing: .11em; padding: 7px 8px; position: absolute; text-transform: uppercase; top: 10px; z-index: 1; }
 .gallery-group:nth-child(2) .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .gallery-group:nth-child(2) .gallery-image img { aspect-ratio: 4 / 5; }
 @media (max-width: 760px) {
